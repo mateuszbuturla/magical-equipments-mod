@@ -4,7 +4,9 @@
   "item.magicalequipments.obsidian_skull": "Obsidian skull",
   "item.magicalequipments.fast_clock": "Fast clock",
   "item.magicalequipments.blindfold": "Blindfold",
+  "item.magicalequipments.vitamins": "Vitamins",
 
   "effect.magicalequipments.anti_slowness": "No slowness",
-  "effect.magicalequipments.anti_blindness": "No blindness"
+  "effect.magicalequipments.anti_blindness": "No blindness",
+  "effect.magicalequipments.anti_weakness": "No weakness"
 }
