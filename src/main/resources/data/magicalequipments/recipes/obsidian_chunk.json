@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["131", "323", "131"],
+  "key": {
+    "1": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "2": {
+      "item": "minecraft:diamond_block"
+    },
+    "3": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "item": "magicalequipments:obsidian_chunk"
+  }
+}
