@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": ["111", "222", "333"],
+  "pattern": ["131", "323", "131"],
   "key": {
     "1": {
-      "item": "minecraft:diamond"
+      "item": "minecraft:crying_obsidian"
     },
     "2": {
       "item": "minecraft:diamond_block"
@@ -13,6 +13,6 @@
     }
   },
   "result": {
-    "item": "magicalequipments:ring_of_resistance"
+    "item": "magicalequipments:obsidian_chunk"
   }
 }
