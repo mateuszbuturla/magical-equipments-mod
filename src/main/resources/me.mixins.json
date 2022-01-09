@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "bucik689.magicalequipments.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": ["MainMixin"],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

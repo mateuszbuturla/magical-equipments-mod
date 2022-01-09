@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "magicalequipments",
+  "version": "${version}",
+
+  "name": "Magical equipments!",
+  "description": "Lots of new magic items like rings, amulets, artifacts and more ",
+  "authors": ["Bucik689"],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "MIT",
+  "icon": "assets/magicalequipments/icon.jpg",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": ["bucik689.magicalequipments.MagicalEquipments"]
+  },
+  "mixins": ["me.mixins.json"],
+
+  "depends": {
+    "fabricloader": ">=0.11.2",
+    "fabric": "*",
+    "minecraft": "1.18.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
