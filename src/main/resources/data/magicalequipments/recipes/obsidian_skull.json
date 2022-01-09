@@ -1,9 +1,12 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": ["11", "11"],
+  "pattern": [" 1 ", "121", " 1 "],
   "key": {
     "1": {
       "item": "magicalequipments:obsidian_chunk"
+    },
+    "2": {
+      "item": "minecraft:wither_skeleton_skull"
     }
   },
   "result": {
