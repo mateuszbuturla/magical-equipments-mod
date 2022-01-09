@@ -3,5 +3,8 @@
   "item.magicalequipments.obsidian_chunk": "Obsidian chunk",
   "item.magicalequipments.obsidian_skull": "Obsidian skull",
   "item.magicalequipments.fast_clock": "Fast clock",
-  "effect.magicalequipments.anti_slowness": "No slowness"
+  "item.magicalequipments.blindfold": "Blindfold",
+
+  "effect.magicalequipments.anti_slowness": "No slowness",
+  "effect.magicalequipments.anti_blindness": "No blindness"
 }

@@ -14,6 +14,7 @@ public class ModItems {
         public static final Trinket RING_OF_RESISTANCE = new Trinket(new Item.Settings().group(ItemGroup.MISC), "ring_of_resistance", new EffectDefiniction[] {new EffectDefiniction(StatusEffects.RESISTANCE, 20 * 2 * 1, 0, false)});
         public static final Material OBSIDIAN_CHUNK = new Material(new Item.Settings().group(ItemGroup.MISC), "obsidian_chunk");
         public static final Trinket FAST_CLOCK = new Trinket(new Item.Settings().group(ItemGroup.MISC), "fast_clock", new EffectDefiniction[] {new EffectDefiniction(ModEffects.ANTI_SLOWNESS, 20 * 2 * 1, 0, false)});
+        public static final Trinket BLINDFOLD = new Trinket(new Item.Settings().group(ItemGroup.MISC), "blindfold", new EffectDefiniction[] {new EffectDefiniction(ModEffects.ANTI_BLINDNESS, 20 * 2 * 1, 0, false)});
 
         public static void registerModItems() {
         }
