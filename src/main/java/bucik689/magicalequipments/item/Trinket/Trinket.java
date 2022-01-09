@@ -11,17 +11,16 @@ import net.minecraft.text.TranslatableText;
 import net.minecraft.world.World;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-
 import java.util.List;
-
+import bucik689.magicalequipments.effects.EffectDefiniction;
 import bucik689.magicalequipments.item.Config;
 
 public class Trinket extends TrinketItem {
 
     public final String itemName;
-    public StatusEffectInstance[] statusEffects;
+    public EffectDefiniction[] statusEffects;
 
-    public Trinket(Settings settings, String itemName, StatusEffectInstance[] statusEffects) {
+    public Trinket(Settings settings, String itemName, EffectDefiniction[] statusEffects) {
         super(settings);
         this.itemName = itemName;
         this.statusEffects = statusEffects;
@@ -38,8 +37,9 @@ public class Trinket extends TrinketItem {
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
         if (statusEffects.length > 0) {
             for (int i = 0; i < statusEffects.length; i++) {
-                if (!entity.hasStatusEffect(statusEffects[i].getEffectType())) {
-                    entity.addStatusEffect(statusEffects[i]);
+                if (!entity.hasStatusEffect(statusEffects[i].type)) {
+                    entity.addStatusEffect(new StatusEffectInstance(statusEffects[i].type, statusEffects[i].duration,
+                            statusEffects[i].amplifier, true, statusEffects[i].visible));
                 }
             }
         }

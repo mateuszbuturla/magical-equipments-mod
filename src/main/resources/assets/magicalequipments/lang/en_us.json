@@ -1,5 +1,7 @@
 {
   "item.magicalequipments.ring_of_resistance": "Ring of resistance",
   "item.magicalequipments.obsidian_chunk": "Obsidian chunk",
-  "item.magicalequipments.obsidian_skull": "Obsidian skull"
+  "item.magicalequipments.obsidian_skull": "Obsidian skull",
+  "item.magicalequipments.fast_clock": "Fast clock",
+  "effect.magicalequipments.anti_slowness": "No slowness"
 }
