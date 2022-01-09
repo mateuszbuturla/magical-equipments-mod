@@ -1,11 +1,10 @@
-package bucik689.magicalequipments.item;
+package bucik689.magicalequipments.item.Trinket;
 
 import dev.emi.trinkets.api.SlotReference;
 import dev.emi.trinkets.api.TrinketItem;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
@@ -15,12 +14,17 @@ import net.minecraft.util.registry.Registry;
 
 import java.util.List;
 
-public class ObsidianSkull extends TrinketItem {
+import bucik689.magicalequipments.item.Config;
 
-    private final String itemName = "obsidian_skull";
+public class Trinket extends TrinketItem {
 
-    public ObsidianSkull(Settings settings) {
+    public final String itemName;
+    public StatusEffectInstance[] statusEffects;
+
+    public Trinket(Settings settings, String itemName, StatusEffectInstance[] statusEffects) {
         super(settings);
+        this.itemName = itemName;
+        this.statusEffects = statusEffects;
         Registry.register(Registry.ITEM, new Identifier(Config.modId, itemName), this);
     }
 
@@ -32,8 +36,12 @@ public class ObsidianSkull extends TrinketItem {
 
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if (!entity.hasStatusEffect(StatusEffects.RESISTANCE) && !entity.isInLava()) {
-            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 80, 0, true, false));
+        if (statusEffects.length > 0) {
+            for (int i = 0; i < statusEffects.length; i++) {
+                if (!entity.hasStatusEffect(statusEffects[i].getEffectType())) {
+                    entity.addStatusEffect(statusEffects[i]);
+                }
+            }
         }
     }
 }
