@@ -11,6 +11,8 @@ public class ModItems {
             new Item.Settings().group(ItemGroup.MISC));
     public static final ObsidianChunk OBSIDIAN_CHUNK = new ObsidianChunk(
             new Item.Settings().group(ItemGroup.MATERIALS));
+    public static final ObsidianSkull OBSIDIAN_SKULL = new ObsidianSkull(
+            new Item.Settings().group(ItemGroup.MISC));
 
     public static void registerModItems() {
     }
