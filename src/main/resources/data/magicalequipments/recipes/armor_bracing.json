@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["313", "323"],
+  "key": {
+    "1": {
+      "item": "magicalequipments:vitamins"
+    },
+    "2": {
+      "item": "magicalequipments:armor_polish"
+    },
+    "3": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "magicalequipments:armor_bracing"
+  }
+}
