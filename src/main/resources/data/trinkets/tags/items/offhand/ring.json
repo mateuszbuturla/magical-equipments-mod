@@ -1,4 +1,8 @@
 {
   "replace": false,
-  "values": ["magicalequipments:ring_of_resistance"]
+  "values": [
+    "magicalequipments:ring_of_resistance",
+    "magicalequipments:ring_of_health",
+    "magicalequipments:advanced_ring_of_health"
+  ]
 }
