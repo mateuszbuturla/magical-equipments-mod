@@ -1,4 +1,5 @@
 {
   "replace": false,
-  "values": ["magicalequipments:obsidian_skull", "magicalequipments:armor_bracing"]
+  "values": ["magicalequipments:obsidian_skull", "magicalequipments:armor_bracing"],
+  "values": ["magicalequipments:obsidian_skull", "magicalequipments:vitamins"]
 }
