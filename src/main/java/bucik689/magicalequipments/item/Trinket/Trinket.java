@@ -12,8 +12,8 @@ import net.minecraft.world.World;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import java.util.List;
+import bucik689.magicalequipments.Config;
 import bucik689.magicalequipments.effects.EffectDefiniction;
-import bucik689.magicalequipments.item.Config;
 
 public class Trinket extends TrinketItem {
 
