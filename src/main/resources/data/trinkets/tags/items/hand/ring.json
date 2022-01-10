@@ -4,6 +4,8 @@
     "magicalequipments:ring_of_resistance",
     "magicalequipments:blindfold",
     "magicalequipments:medicated_bandage",
-    "magicalequipments:bezoar"
+    "magicalequipments:bezoar",
+    "magicalequipments:ring_of_health",
+    "magicalequipments:advanced_ring_of_health"
   ]
 }
