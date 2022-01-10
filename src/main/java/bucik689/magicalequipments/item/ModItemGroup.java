@@ -9,5 +9,5 @@ import net.minecraft.util.Identifier;
 public class ModItemGroup {
     public static final ItemGroup MAGICALEQUIPMENT = FabricItemGroupBuilder.build(
             new Identifier(Config.modId, Config.modId),
-            () -> new ItemStack(ModItems.ANKH_SHIELD));
+            () -> new ItemStack(ModItems.RING_OF_RESISTANCE));
 }
