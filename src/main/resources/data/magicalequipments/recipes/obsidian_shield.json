@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["313", "323", "333"],
+  "key": {
+    "1": {
+      "item": "magicalequipments:obsidian_skull"
+    },
+    "2": {
+      "item": "magicalequipments:cobalt_shield"
+    },
+    "3": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "item": "magicalequipments:obsidian_shield"
+  }
+}
