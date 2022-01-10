@@ -5,7 +5,19 @@
   "item.magicalequipments.fast_clock": "Fast clock",
   "item.magicalequipments.blindfold": "Blindfold",
   "item.magicalequipments.armor_polish": "Armor polish",
+  "item.magicalequipments.cobalt_shield": "Cobalt shield",
+  "item.magicalequipments.ankh_charm": "Ankh charm",
+  "item.magicalequipments.medicated_bandage": "Medicated bandage",
+  "item.magicalequipments.obsidian_shield": "Obsidian shield",
+  "item.magicalequipments.ankh_shield": "Ankh shield",
+  "item.magicalequipments.armor_bracing": "Armor bracing",
+  "item.magicalequipments.vitamins": "Vitamins",
+  "item.magicalequipments.bezoar": "Bezoar",
 
   "effect.magicalequipments.anti_slowness": "No slowness",
-  "effect.magicalequipments.anti_blindness": "No blindness"
+  "effect.magicalequipments.anti_blindness": "No blindness",
+  "effect.magicalequipments.anti_weakness": "No weakness"
+  "effect.magicalequipments.anti_slowness": "No slowness",
+  "effect.magicalequipments.anti_blindness": "No blindness",
+  "effect.magicalequipments.anti_poison": "No poison"
 }
