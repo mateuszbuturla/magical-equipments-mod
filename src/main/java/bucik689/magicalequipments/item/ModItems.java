@@ -17,6 +17,8 @@ public class ModItems {
         public static final TrinketBase ADVANCED_RING_OF_HEALTH = new RingHealth("advanced_ring_of_health", 6);
         public static final TrinketBase RING_OF_SPEED = new RingEffect("ring_of_speed", StatusEffects.SPEED, 0);
         public static final TrinketBase ADVANCED_RING_OF_SPEED = new RingEffect("advanced_ring_of_speed", StatusEffects.SPEED, 1);
+        public static final TrinketBase RING_OF_STRENGTH = new RingEffect("ring_of_strength", StatusEffects.STRENGTH, 0);
+        public static final TrinketBase ADVANCED_RING_OF_STRENGTH = new RingEffect("advanced_ring_of_strength", StatusEffects.STRENGTH, 1);
 
         public static final TrinketBase OBSIDIAN_SKULL = new RingEffect("obsidian_skull", StatusEffects.FIRE_RESISTANCE, 0);
         public static final TrinketBase FAST_CLOCK = new RingEffectResistance("fast_clock", StatusEffects.SLOWNESS);
