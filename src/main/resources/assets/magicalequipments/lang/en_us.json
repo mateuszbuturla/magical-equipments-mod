@@ -1,5 +1,4 @@
 {
-  "item.magicalequipments.ring_of_resistance": "Ring of resistance",
   "item.magicalequipments.obsidian_chunk": "Obsidian chunk",
   "item.magicalequipments.obsidian_skull": "Obsidian skull",
   "item.magicalequipments.fast_clock": "Fast clock",
@@ -15,6 +14,7 @@
   "item.magicalequipments.vitamins": "Vitamins",
   "item.magicalequipments.bezoar": "Bezoar",
 
+  "item.magicalequipments.ring_of_resistance": "Ring of resistance",
   "item.magicalequipments.ring_of_health": "Ring of health",
   "item.magicalequipments.advanced_ring_of_health": "Advanced ring of health",
   "item.magicalequipments.ring_of_speed": "Ring of speed",
@@ -25,5 +25,5 @@
   "effect.magicalequipments.anti_weakness": "No weakness",
   "effect.magicalequipments.anti_poison": "No poison",
 
-  "itemGroup.magicalequipments.magicalequipments": "Ruby Mod"
+  "itemGroup.magicalequipments.magicalequipments": "Magical Equipment"
 }

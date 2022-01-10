@@ -4,10 +4,12 @@ import bucik689.magicalequipments.item.Material.Material;
 import bucik689.magicalequipments.item.Trinket.TrinketBase;
 import bucik689.magicalequipments.item.Trinket.Rings.RingEffect;
 import bucik689.magicalequipments.item.Trinket.Rings.RingEffectResistance;
+import bucik689.magicalequipments.item.Trinket.Rings.RingHealth;
 import net.minecraft.entity.effect.StatusEffects;
 public class ModItems {
 
         public static final Material OBSIDIAN_CHUNK = new Material("obsidian_chunk");
+
 
         public static final TrinketBase RING_OF_RESISTANCE = new RingEffect("ring_of_resistance", StatusEffects.RESISTANCE, 1);
         public static final TrinketBase RING_OF_HEALTH = new RingHealth("ring_of_health", 2);
