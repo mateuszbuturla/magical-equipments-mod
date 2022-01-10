@@ -5,6 +5,7 @@ import bucik689.magicalequipments.item.Trinket.TrinketBase;
 import bucik689.magicalequipments.item.Trinket.Rings.RingEffect;
 import bucik689.magicalequipments.item.Trinket.Rings.RingEffectParam;
 import bucik689.magicalequipments.item.Trinket.Rings.RingEffectResistance;
+import bucik689.magicalequipments.item.Trinket.Rings.RingEffectResistanceParam;
 import bucik689.magicalequipments.item.Trinket.Rings.RingHealth;
 import net.minecraft.entity.effect.StatusEffects;
 public class ModItems {
@@ -21,18 +22,18 @@ public class ModItems {
         public static final TrinketBase ADVANCED_RING_OF_STRENGTH = new RingEffect("advanced_ring_of_strength", new RingEffectParam[] {new RingEffectParam(StatusEffects.STRENGTH, 1)});
 
         public static final TrinketBase OBSIDIAN_SKULL = new RingEffect("obsidian_skull", new RingEffectParam[] {new RingEffectParam(StatusEffects.FIRE_RESISTANCE, 0)});
-        public static final TrinketBase FAST_CLOCK = new RingEffectResistance("fast_clock", StatusEffects.SLOWNESS);
-        public static final TrinketBase BLINDFOLD = new RingEffectResistance("blindfold", StatusEffects.BLINDNESS);
-        public static final TrinketBase ADHESIVE_BANDAGE = new RingEffectResistance("adhesive_bandage", StatusEffects.WITHER);
-        public static final TrinketBase ARMOR_POLISH = new RingEffectResistance("armor_polish", StatusEffects.BLINDNESS);
-        public static final TrinketBase COBALT_SHIELD = new RingEffectResistance("cobalt_shield", StatusEffects.BLINDNESS);
-        public static final TrinketBase ANKH_CHARM = new RingEffectResistance("ankh_charm", StatusEffects.BLINDNESS);
-        public static final TrinketBase MEDICATED_BANDAGE = new RingEffectResistance("medicated_bandage", StatusEffects.BLINDNESS);
-        public static final TrinketBase OBSIDIAN_SHIELD = new RingEffectResistance("obsidian_shield", StatusEffects.FIRE_RESISTANCE);
-        public static final TrinketBase ANKH_SHIELD = new RingEffectResistance("ankh_shield", StatusEffects.BLINDNESS);
-        public static final TrinketBase ARMOR_BRACING = new RingEffectResistance("armor_bracing", StatusEffects.BLINDNESS);
-        public static final TrinketBase VITAMINS = new RingEffectResistance("vitamins", StatusEffects.WEAKNESS);
-        public static final TrinketBase BEZOAR = new RingEffectResistance("bezoar", StatusEffects.POISON);
+        public static final TrinketBase FAST_CLOCK = new RingEffectResistance("fast_clock", new RingEffectResistanceParam[] {new RingEffectResistanceParam(StatusEffects.SLOWNESS)});
+        public static final TrinketBase BLINDFOLD = new RingEffectResistance("blindfold", new RingEffectResistanceParam[] {new RingEffectResistanceParam(StatusEffects.BLINDNESS)});
+        public static final TrinketBase ADHESIVE_BANDAGE = new RingEffectResistance("adhesive_bandage", new RingEffectResistanceParam[] {new RingEffectResistanceParam(StatusEffects.WITHER)});
+        public static final TrinketBase ARMOR_POLISH = new RingEffectResistance("armor_polish", new RingEffectResistanceParam[] {});
+        public static final TrinketBase COBALT_SHIELD = new RingEffectResistance("cobalt_shield", new RingEffectResistanceParam[] {});
+        public static final TrinketBase ANKH_CHARM = new RingEffectResistance("ankh_charm", new RingEffectResistanceParam[] {new RingEffectResistanceParam(StatusEffects.SLOWNESS), new RingEffectResistanceParam(StatusEffects.WITHER), new RingEffectResistanceParam(StatusEffects.POISON), new RingEffectResistanceParam(StatusEffects.WEAKNESS), new RingEffectResistanceParam(StatusEffects.BLINDNESS)});
+        public static final TrinketBase MEDICATED_BANDAGE = new RingEffectResistance("medicated_bandage", new RingEffectResistanceParam[] {new RingEffectResistanceParam(StatusEffects.WITHER), new RingEffectResistanceParam(StatusEffects.BLINDNESS)});
+        public static final TrinketBase OBSIDIAN_SHIELD = new RingEffect("obsidian_shield", new RingEffectParam[] {new RingEffectParam(StatusEffects.FIRE_RESISTANCE, 0)});
+        public static final TrinketBase ANKH_SHIELD = new RingEffectResistance("ankh_shield",  new RingEffectResistanceParam[] {new RingEffectResistanceParam(StatusEffects.SLOWNESS), new RingEffectResistanceParam(StatusEffects.WITHER), new RingEffectResistanceParam(StatusEffects.POISON), new RingEffectResistanceParam(StatusEffects.WEAKNESS), new RingEffectResistanceParam(StatusEffects.BLINDNESS)});//UPDATE
+        public static final TrinketBase ARMOR_BRACING = new RingEffectResistance("armor_bracing",  new RingEffectResistanceParam[] {new RingEffectResistanceParam(StatusEffects.WEAKNESS)});
+        public static final TrinketBase VITAMINS = new RingEffectResistance("vitamins",  new RingEffectResistanceParam[] {new RingEffectResistanceParam(StatusEffects.WEAKNESS)});
+        public static final TrinketBase BEZOAR = new RingEffectResistance("bezoar", new RingEffectResistanceParam[] {new RingEffectResistanceParam(StatusEffects.POISON)});
 
         public static void registerModItems() {
                 
