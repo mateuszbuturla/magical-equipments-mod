@@ -1,6 +1,6 @@
 package bucik689.magicalequipments.item.Material;
 
-import bucik689.magicalequipments.item.Config;
+import bucik689.magicalequipments.Config;
 import dev.emi.trinkets.api.TrinketItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
