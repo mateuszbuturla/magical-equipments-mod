@@ -1,10 +1,13 @@
 {
   "replace": false,
-  "values": ["magicalequipments:obsidian_skull", "magicalequipments:adhesive_bandage"]
-  "values": ["magicalequipments:obsidian_skull", "magicalequipments:armor_polish"]
-  "values": ["magicalequipments:obsidian_skull", "magicalequipments:cobalt_shield"]
-  "values": ["magicalequipments:obsidian_skull", "magicalequipments:obsidian_shield"],
-  "values": ["magicalequipments:obsidian_skull", "magicalequipments:ankh_shield"],
-  "values": ["magicalequipments:obsidian_skull", "magicalequipments:armor_bracing"],
-  "values": ["magicalequipments:obsidian_skull", "magicalequipments:vitamins"]
+  "values": [
+    "magicalequipments:obsidian_skull",
+    "magicalequipments:adhesive_bandage",
+    "magicalequipments:armor_polish",
+    "magicalequipments:cobalt_shield",
+    "magicalequipments:obsidian_shield",
+    "magicalequipments:ankh_shield",
+    "magicalequipments:armor_bracing",
+    "magicalequipments:vitamins"
+  ]
 }

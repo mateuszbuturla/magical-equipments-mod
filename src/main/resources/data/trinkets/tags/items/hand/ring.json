@@ -1,5 +1,9 @@
 {
   "replace": false,
-  "values": ["magicalequipments:ring_of_resistance", "magicalequipments:blindfold", "magicalequipments:medicated_bandage"],
-  "values": ["magicalequipments:ring_of_resistance", "magicalequipments:blindfold", "magicalequipments:bezoar"]
+  "values": [
+    "magicalequipments:ring_of_resistance",
+    "magicalequipments:blindfold",
+    "magicalequipments:medicated_bandage",
+    "magicalequipments:bezoar"
+  ]
 }

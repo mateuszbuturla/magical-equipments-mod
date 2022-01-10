@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["414", "424", "434"],
+  "key": {
+    "1": {
+      "item": "magicalequipments:medicated_bandage"
+    },
+    "2": {
+      "item": "magicalequipments:armor_bracing"
+    },
+    "3": {
+      "item": "magicalequipments:blindfold"
+    },
+    "4": {
+      "item": "minecraft:gold_block"
+    }
+  },
+  "result": {
+    "item": "magicalequipments:ankh_charm"
+  }
+}
