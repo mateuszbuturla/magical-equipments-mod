@@ -10,8 +10,8 @@ public class RingEffect extends TrinketBase {
 
     private RingEffectParam[] effects;
 
-    public RingEffect(String name, RingEffectParam[] effects) {
-        super(name);
+    public RingEffect(String name, int tier, RingEffectParam[] effects) {
+        super(name, tier);
         this.effects = effects;
     }
 

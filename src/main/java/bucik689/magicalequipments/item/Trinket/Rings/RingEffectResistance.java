@@ -9,8 +9,8 @@ public class RingEffectResistance extends TrinketBase {
 
     private final RingEffectResistanceParam[] effects;
 
-    public RingEffectResistance(String name, RingEffectResistanceParam[] effects) {
-        super(name);
+    public RingEffectResistance(String name, int tier, RingEffectResistanceParam[] effects) {
+        super(name, tier);
         this.effects = effects;
     }
 
