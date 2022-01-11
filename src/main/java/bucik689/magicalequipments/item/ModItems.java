@@ -35,6 +35,7 @@ public class ModItems {
         public static final TrinketBase ARMOR_BRACING = new RingEffectResistance("armor_bracing", Rarrity.EPIC, SlotType.ARTIFACT,  new RingEffectResistanceParam[] {new RingEffectResistanceParam(StatusEffects.WEAKNESS)});
         public static final TrinketBase VITAMINS = new RingEffectResistance("vitamins", Rarrity.RARE, SlotType.ARTIFACT, new RingEffectResistanceParam[] {new RingEffectResistanceParam(StatusEffects.WEAKNESS)});
         public static final TrinketBase BEZOAR = new RingEffectResistance("bezoar", Rarrity.RARE, SlotType.ARTIFACT, new RingEffectResistanceParam[] {new RingEffectResistanceParam(StatusEffects.POISON)});
+        public static final TrinketBase EMBLEM_OF_ABSORPTION = new RingEffect("emblem_of_absorption", Rarrity.EPIC, SlotType.ARTIFACT, new RingEffectParam[] {new RingEffectParam(StatusEffects.ABSORPTION, 1)});
 
         public static void registerModItems() {
                 

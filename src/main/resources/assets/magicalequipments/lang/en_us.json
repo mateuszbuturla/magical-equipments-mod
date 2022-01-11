@@ -14,6 +14,8 @@
   "item.magicalequipments.vitamins": "Vitamins",
   "item.magicalequipments.bezoar": "Bezoar",
 
+  "item.magicalequipments.emblem_of_absorption": "Emblem of absorption",
+
   "magicalequipments.item.description.obsidian_skull": "Gains fire resistance",
   "magicalequipments.item.description.fast_clock": "Gains immunity to slowness",
   "magicalequipments.item.description.blindfold": "Gains immunity to blindness",
@@ -37,6 +39,8 @@
   "item.magicalequipments.ring_of_strength": "Ring of strength",
   "item.magicalequipments.advanced_ring_of_strength": "Advanced ring of strength",
   "item.magicalequipments.ring_of_tank": "Ring of tank",
+
+  "magicalequipments.item.description.emblem_of_absorption": "Gains absorption effect",
 
   "magicalequipments.item.description.ring_of_resistance": "Gains resistance effect",
   "magicalequipments.item.description.advanced_ring_of_resistance": "Gains resistance effect",
