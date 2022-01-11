@@ -15,6 +15,7 @@
   "item.magicalequipments.bezoar": "Bezoar",
 
   "item.magicalequipments.angel_necklace": "Angel necklace",
+  "item.magicalequipments.vampiric_gountlet": "Vampiric gountlet",
 
   "item.magicalequipments.emblem_of_absorption": "Emblem of absorption",
   "item.magicalequipments.emblem_of_fierce": "Emblem of fierce",
@@ -36,6 +37,8 @@
   "magicalequipments.item.description.bezoar": "Gains resistance to poison",
 
   "magicalequipments.item.description.angel_necklace": "Gains double jump",
+  "magicalequipments.item.description.vampiric_gountlet": "Allow to storage health",
+  "magicalequipments.item.advanced_description.vampiric_gountlet": "Storage health(shift + alt), heal(alt)",
 
   "item.magicalequipments.ring_of_resistance": "Ring of resistance",
   "item.magicalequipments.advanced_ring_of_resistance": "Advanced ring of resistance",
@@ -72,6 +75,7 @@
   "tooltip.magicalequipments.slot.necklace": "Necklace",
   "tooltip.magicalequipments.slot.artifact": "Artifact",
   "tooltip.magicalequipments.when_equipped": "When equipped:",
+  "tooltip.magicalequipments.shift_to_additional_information": "Press shift for additional information:",
 
   "itemGroup.magicalequipments.magicalequipments": "Magical Equipment"
 }

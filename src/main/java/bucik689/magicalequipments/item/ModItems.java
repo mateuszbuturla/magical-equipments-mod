@@ -8,6 +8,7 @@ import bucik689.magicalequipments.item.Trinket.Artifacts.EmblemOfAttack;
 import bucik689.magicalequipments.item.Trinket.Artifacts.EmblemOfDefensive;
 import bucik689.magicalequipments.item.Trinket.Artifacts.EmblemOfFierce;
 import bucik689.magicalequipments.item.Trinket.Artifacts.ObsidianShield;
+import bucik689.magicalequipments.item.Trinket.Artifacts.VampiricGountlet;
 import bucik689.magicalequipments.item.Trinket.Rings.RingEffect;
 import bucik689.magicalequipments.item.Trinket.Rings.RingEffectParam;
 import bucik689.magicalequipments.item.Trinket.Rings.RingEffectResistance;
@@ -29,6 +30,7 @@ public class ModItems {
         public static final TrinketBase RING_OF_TANK = new RingEffect("ring_of_tank", Rarrity.EPIC, SlotType.RING, new RingEffectParam[] {new RingEffectParam(StatusEffects.RESISTANCE, 2), new RingEffectParam(StatusEffects.SLOWNESS, 2)});
 
         public static final TrinketBase ANGEL_NECKLACE = new TrinketBase("angel_necklace", Rarrity.LEGENDARY, SlotType.NECKLACE);
+        public static final TrinketBase VAMPIRIC_GOUNTLET = new VampiricGountlet("vampiric_gountlet", Rarrity.UNIQUE, SlotType.ARTIFACT);
 
         public static final TrinketBase OBSIDIAN_SKULL = new RingEffect("obsidian_skull", Rarrity.COMMON, SlotType.ARTIFACT, new RingEffectParam[] {new RingEffectParam(StatusEffects.FIRE_RESISTANCE, 0)});
         public static final TrinketBase FAST_CLOCK = new RingEffectResistance("fast_clock", Rarrity.RARE, SlotType.ARTIFACT, new RingEffectResistanceParam[] {new RingEffectResistanceParam(StatusEffects.SLOWNESS)});
