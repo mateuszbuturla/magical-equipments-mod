@@ -1,5 +1,7 @@
 package bucik689.magicalequipments.item.Trinket.Rings;
 
+import bucik689.magicalequipments.item.Rarrity;
+import bucik689.magicalequipments.item.SlotType;
 import bucik689.magicalequipments.item.Trinket.TrinketBase;
 import dev.emi.trinkets.api.SlotReference;
 import net.minecraft.entity.LivingEntity;
@@ -9,8 +11,8 @@ public class RingEffectResistance extends TrinketBase {
 
     private final RingEffectResistanceParam[] effects;
 
-    public RingEffectResistance(String name, int tier, RingEffectResistanceParam[] effects) {
-        super(name, tier);
+    public RingEffectResistance(String name, Rarrity rarrity, SlotType slotType, RingEffectResistanceParam[] effects) {
+        super(name, rarrity, slotType);
         this.effects = effects;
     }
 

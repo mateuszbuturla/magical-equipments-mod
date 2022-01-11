@@ -20,7 +20,7 @@
   "magicalequipments.item.description.adhesive_bandage": "Gains immunity to wither effect",
   "magicalequipments.item.description.armor_polish": "Gains immunity to armor broken effect",
   "magicalequipments.item.description.cobalt_shield": "Gains immunity to knockback",
-  "magicalequipments.item.description.ankh_charm": "Gains immunity to slowness, wither effect, poison, weakness and blindness",
+  "magicalequipments.item.description.ankh_charm": "Gains immunity to most effects",
   "magicalequipments.item.description.medicated_bandage": "Gains immunity to blindness and wither effect",
   "magicalequipments.item.description.obsidian_shield": "Gains fire resistance and immunity to knockback",
   "magicalequipments.item.description.ankh_shield": "Gains resistance to most effects",
@@ -52,6 +52,9 @@
   "tooltip.magicalequipments.rarrity.epic": "Epic",
   "tooltip.magicalequipments.rarrity.legendary": "Legendary",
   "tooltip.magicalequipments.rarrity.unique": "Unique",
+  "tooltip.magicalequipments.slot.ring": "Ring",
+  "tooltip.magicalequipments.slot.amulet": "Amulet",
+  "tooltip.magicalequipments.slot.artifact": "Artifact",
   "tooltip.magicalequipments.when_equipped": "When equipped:",
 
   "itemGroup.magicalequipments.magicalequipments": "Magical Equipment"

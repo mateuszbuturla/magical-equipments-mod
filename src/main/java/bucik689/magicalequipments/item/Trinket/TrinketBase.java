@@ -6,6 +6,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.text.TranslatableText;
 import bucik689.magicalequipments.Config;
 import bucik689.magicalequipments.item.ModItemGroup;
+import bucik689.magicalequipments.item.Rarrity;
+import bucik689.magicalequipments.item.SlotType;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -16,12 +18,14 @@ import java.util.List;
 public class TrinketBase extends TrinketItem {
 
     private final String itemName;
-    private final int tier;
+    private final Rarrity rarrity;
+    private final SlotType slotType;
 
-    public TrinketBase(String itemName, int tier) {
+    public TrinketBase(String itemName, Rarrity rarrity, SlotType slotType) {
         super(new Settings().group(ModItemGroup.MAGICALEQUIPMENT).maxCount(1));
         this.itemName = itemName;
-        this.tier = tier;
+        this.rarrity = rarrity;
+        this.slotType = slotType;
 
         Registry.register(Registry.ITEM, new Identifier(Config.modId, getItemName()), this);
     }
@@ -33,12 +37,25 @@ public class TrinketBase extends TrinketItem {
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
-        switch (tier) {
-            case 0 -> tooltip.add(new TranslatableText("tooltip." + Config.modId + ".rarrity.common").formatted(Formatting.GREEN));
-            case 1 -> tooltip.add(new TranslatableText("tooltip." + Config.modId + ".rarrity.rare").formatted(Formatting.BLUE));
-            case 2 -> tooltip.add(new TranslatableText("tooltip." + Config.modId + ".rarrity.epic").formatted(Formatting.LIGHT_PURPLE));
-            case 3 -> tooltip.add(new TranslatableText("tooltip." + Config.modId + ".rarrity.legendary").formatted(Formatting.RED));
-            case 4 -> tooltip.add(new TranslatableText("tooltip." + Config.modId + ".rarrity.unique").formatted(Formatting.DARK_RED));
+        switch (slotType) {
+            case RING -> tooltip.add(
+                    new TranslatableText("tooltip." + Config.modId + ".slot.ring").formatted(Formatting.GOLD));
+            case AMULET -> tooltip
+                    .add(new TranslatableText("tooltip." + Config.modId + ".slot.amulet").formatted(Formatting.GOLD));
+            case ARTIFACT -> tooltip.add(new TranslatableText("tooltip." + Config.modId + ".slot.artifact")
+                    .formatted(Formatting.GOLD));
+        }
+        switch (rarrity) {
+            case COMMON -> tooltip.add(
+                    new TranslatableText("tooltip." + Config.modId + ".rarrity.common").formatted(Formatting.GREEN));
+            case RARE -> tooltip
+                    .add(new TranslatableText("tooltip." + Config.modId + ".rarrity.rare").formatted(Formatting.BLUE));
+            case EPIC -> tooltip.add(new TranslatableText("tooltip." + Config.modId + ".rarrity.epic")
+                    .formatted(Formatting.LIGHT_PURPLE));
+            case LEGENDARY -> tooltip.add(
+                    new TranslatableText("tooltip." + Config.modId + ".rarrity.legendary").formatted(Formatting.RED));
+            case UNIQUE -> tooltip.add(
+                    new TranslatableText("tooltip." + Config.modId + ".rarrity.unique").formatted(Formatting.DARK_RED));
         }
         tooltip.add(new TranslatableText("tooltip." + Config.modId + ".when_equipped").formatted(Formatting.GOLD));
         tooltip.add(new TranslatableText(Config.modId + ".item.description." + itemName).formatted(Formatting.BLUE));
