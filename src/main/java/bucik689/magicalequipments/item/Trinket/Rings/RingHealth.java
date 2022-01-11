@@ -3,6 +3,8 @@ package bucik689.magicalequipments.item.Trinket.Rings;
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
 
+import bucik689.magicalequipments.item.Rarrity;
+import bucik689.magicalequipments.item.SlotType;
 import bucik689.magicalequipments.item.Trinket.TrinketBase;
 import dev.emi.trinkets.api.SlotReference;
 import net.minecraft.entity.LivingEntity;
@@ -18,8 +20,8 @@ public class RingHealth extends TrinketBase {
     private static final UUID HEALTH_UUID = UUID.fromString("b29c34f3-1450-48ff-ab28-639647e11861");
     private final int healthAmount;
 
-    public RingHealth(String name, int healthAmount) {
-        super(name);
+    public RingHealth(String name, Rarrity rarrity, SlotType slotType, int healthAmount) {
+        super(name, rarrity, slotType);
         this.healthAmount = healthAmount;
     }
 

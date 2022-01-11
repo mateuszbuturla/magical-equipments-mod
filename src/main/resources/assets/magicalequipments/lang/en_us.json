@@ -14,6 +14,20 @@
   "item.magicalequipments.vitamins": "Vitamins",
   "item.magicalequipments.bezoar": "Bezoar",
 
+  "magicalequipments.item.description.obsidian_skull": "Gains fire resistance",
+  "magicalequipments.item.description.fast_clock": "Gains immunity to slowness",
+  "magicalequipments.item.description.blindfold": "Gains immunity to blindness",
+  "magicalequipments.item.description.adhesive_bandage": "Gains immunity to wither effect",
+  "magicalequipments.item.description.armor_polish": "Gains immunity to armor broken effect",
+  "magicalequipments.item.description.cobalt_shield": "Gains immunity to knockback",
+  "magicalequipments.item.description.ankh_charm": "Gains immunity to most effects",
+  "magicalequipments.item.description.medicated_bandage": "Gains immunity to blindness and wither effect",
+  "magicalequipments.item.description.obsidian_shield": "Gains fire resistance and immunity to knockback",
+  "magicalequipments.item.description.ankh_shield": "Gains resistance to most effects",
+  "magicalequipments.item.description.armor_bracing": "Gains resistance to armor broken and weakness",
+  "magicalequipments.item.description.vitamins": "Gains resistance to weakness",
+  "magicalequipments.item.description.bezoar": "Gains resistance to poison",
+
   "item.magicalequipments.ring_of_resistance": "Ring of resistance",
   "item.magicalequipments.advanced_ring_of_resistance": "Advanced ring of resistance",
   "item.magicalequipments.ring_of_health": "Ring of health",
@@ -23,10 +37,25 @@
   "item.magicalequipments.ring_of_strength": "Ring of strength",
   "item.magicalequipments.advanced_ring_of_strength": "Advanced ring of strength",
 
-  "effect.magicalequipments.anti_slowness": "No slowness",
-  "effect.magicalequipments.anti_blindness": "No blindness",
-  "effect.magicalequipments.anti_weakness": "No weakness",
-  "effect.magicalequipments.anti_poison": "No poison",
+  "magicalequipments.item.description.ring_of_resistance": "Gains resistance effect",
+  "magicalequipments.item.description.advanced_ring_of_resistance": "Gains resistance effect",
+  "magicalequipments.item.description.ring_of_health": "Gains 1 additional heart",
+  "magicalequipments.item.description.advanced_ring_of_health": "Gains 3 additional hearts",
+  "magicalequipments.item.description.ring_of_speed": "Gains speed effect",
+  "magicalequipments.item.description.advanced_ring_of_speed": "Gains speed effect",
+  "magicalequipments.item.description.ring_of_strength": "Gains strength effect",
+  "magicalequipments.item.description.advanced_ring_of_strength": "Gains strength effect",
+  
+
+  "tooltip.magicalequipments.rarrity.common": "Common",
+  "tooltip.magicalequipments.rarrity.rare": "Rare",
+  "tooltip.magicalequipments.rarrity.epic": "Epic",
+  "tooltip.magicalequipments.rarrity.legendary": "Legendary",
+  "tooltip.magicalequipments.rarrity.unique": "Unique",
+  "tooltip.magicalequipments.slot.ring": "Ring",
+  "tooltip.magicalequipments.slot.amulet": "Amulet",
+  "tooltip.magicalequipments.slot.artifact": "Artifact",
+  "tooltip.magicalequipments.when_equipped": "When equipped:",
 
   "itemGroup.magicalequipments.magicalequipments": "Magical Equipment"
 }
