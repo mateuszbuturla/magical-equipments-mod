@@ -14,6 +14,8 @@
   "item.magicalequipments.vitamins": "Vitamins",
   "item.magicalequipments.bezoar": "Bezoar",
 
+  "item.magicalequipments.angel_necklace": "Angel necklace",
+
   "item.magicalequipments.emblem_of_absorption": "Emblem of absorption",
   "item.magicalequipments.emblem_of_fierce": "Emblem of fierce",
   "item.magicalequipments.emblem_of_defensive": "Emblem of defensive",
@@ -32,6 +34,8 @@
   "magicalequipments.item.description.armor_bracing": "Gains resistance to armor broken and weakness",
   "magicalequipments.item.description.vitamins": "Gains resistance to weakness",
   "magicalequipments.item.description.bezoar": "Gains resistance to poison",
+
+  "magicalequipments.item.description.angel_necklace": "Gains double jump",
 
   "item.magicalequipments.ring_of_resistance": "Ring of resistance",
   "item.magicalequipments.advanced_ring_of_resistance": "Advanced ring of resistance",
@@ -65,7 +69,7 @@
   "tooltip.magicalequipments.rarrity.legendary": "Legendary",
   "tooltip.magicalequipments.rarrity.unique": "Unique",
   "tooltip.magicalequipments.slot.ring": "Ring",
-  "tooltip.magicalequipments.slot.amulet": "Amulet",
+  "tooltip.magicalequipments.slot.necklace": "Necklace",
   "tooltip.magicalequipments.slot.artifact": "Artifact",
   "tooltip.magicalequipments.when_equipped": "When equipped:",
 

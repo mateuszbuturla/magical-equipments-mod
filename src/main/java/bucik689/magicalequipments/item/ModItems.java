@@ -28,6 +28,8 @@ public class ModItems {
         public static final TrinketBase ADVANCED_RING_OF_STRENGTH = new RingEffect("advanced_ring_of_strength", Rarrity.EPIC, SlotType.RING, new RingEffectParam[] {new RingEffectParam(StatusEffects.STRENGTH, 1)});
         public static final TrinketBase RING_OF_TANK = new RingEffect("ring_of_tank", Rarrity.EPIC, SlotType.RING, new RingEffectParam[] {new RingEffectParam(StatusEffects.RESISTANCE, 2), new RingEffectParam(StatusEffects.SLOWNESS, 2)});
 
+        public static final TrinketBase ANGEL_NECKLACE = new TrinketBase("angel_necklace", Rarrity.LEGENDARY, SlotType.NECKLACE);
+
         public static final TrinketBase OBSIDIAN_SKULL = new RingEffect("obsidian_skull", Rarrity.COMMON, SlotType.ARTIFACT, new RingEffectParam[] {new RingEffectParam(StatusEffects.FIRE_RESISTANCE, 0)});
         public static final TrinketBase FAST_CLOCK = new RingEffectResistance("fast_clock", Rarrity.RARE, SlotType.ARTIFACT, new RingEffectResistanceParam[] {new RingEffectResistanceParam(StatusEffects.SLOWNESS)});
         public static final TrinketBase BLINDFOLD = new RingEffectResistance("blindfold", Rarrity.RARE, SlotType.ARTIFACT, new RingEffectResistanceParam[] {new RingEffectResistanceParam(StatusEffects.BLINDNESS)});

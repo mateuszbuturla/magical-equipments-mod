@@ -40,8 +40,8 @@ public class TrinketBase extends TrinketItem {
         switch (slotType) {
             case RING -> tooltip.add(
                     new TranslatableText("tooltip." + Config.modId + ".slot.ring").formatted(Formatting.GOLD));
-            case AMULET -> tooltip
-                    .add(new TranslatableText("tooltip." + Config.modId + ".slot.amulet").formatted(Formatting.GOLD));
+            case NECKLACE -> tooltip
+                    .add(new TranslatableText("tooltip." + Config.modId + ".slot.necklace").formatted(Formatting.GOLD));
             case ARTIFACT -> tooltip.add(new TranslatableText("tooltip." + Config.modId + ".slot.artifact")
                     .formatted(Formatting.GOLD));
         }
