@@ -16,6 +16,7 @@
 
   "item.magicalequipments.emblem_of_absorption": "Emblem of absorption",
   "item.magicalequipments.emblem_of_fierce": "Emblem of fierce",
+  "item.magicalequipments.emblem_of_defensive": "Emblem of defensive",
 
   "magicalequipments.item.description.obsidian_skull": "Gains fire resistance",
   "magicalequipments.item.description.fast_clock": "Gains immunity to slowness",
@@ -43,6 +44,7 @@
 
   "magicalequipments.item.description.emblem_of_absorption": "Gains absorption effect",
   "magicalequipments.item.description.emblem_of_fierce": "Gains attack speed",
+  "magicalequipments.item.description.emblem_of_defensive": "Gains armor toughness",
 
   "magicalequipments.item.description.ring_of_resistance": "Gains resistance effect",
   "magicalequipments.item.description.advanced_ring_of_resistance": "Gains resistance effect",

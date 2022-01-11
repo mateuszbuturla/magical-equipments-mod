@@ -4,6 +4,7 @@ import bucik689.magicalequipments.item.Material.Material;
 import bucik689.magicalequipments.item.Trinket.TrinketBase;
 import bucik689.magicalequipments.item.Trinket.Artifacts.AnkhShield;
 import bucik689.magicalequipments.item.Trinket.Artifacts.CobaltShield;
+import bucik689.magicalequipments.item.Trinket.Artifacts.EmblemOfDefensive;
 import bucik689.magicalequipments.item.Trinket.Artifacts.EmblemOfFierce;
 import bucik689.magicalequipments.item.Trinket.Artifacts.ObsidianShield;
 import bucik689.magicalequipments.item.Trinket.Rings.RingEffect;
@@ -41,6 +42,7 @@ public class ModItems {
         public static final TrinketBase BEZOAR = new RingEffectResistance("bezoar", Rarrity.RARE, SlotType.ARTIFACT, new RingEffectResistanceParam[] {new RingEffectResistanceParam(StatusEffects.POISON)});
         public static final TrinketBase EMBLEM_OF_ABSORPTION = new RingEffect("emblem_of_absorption", Rarrity.EPIC, SlotType.ARTIFACT, new RingEffectParam[] {new RingEffectParam(StatusEffects.ABSORPTION, 1)});
         public static final TrinketBase EMBLEM_OF_FIERCE = new EmblemOfFierce("emblem_of_fierce", Rarrity.EPIC, SlotType.ARTIFACT);
+        public static final TrinketBase EMBLEM_OF_DEFENSIVE = new EmblemOfDefensive("emblem_of_defensive", Rarrity.EPIC, SlotType.ARTIFACT);
 
         public static void registerModItems() {
                 
