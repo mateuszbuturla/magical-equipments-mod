@@ -15,11 +15,11 @@ import net.minecraft.item.ItemStack;
 
 import java.util.UUID;
 
-public class CobaltShield extends TrinketBase {
+public class EmblemOfFierce extends TrinketBase {
 
-    private static final UUID KNOCKBACK_RESISTANCE_UUID = UUID.fromString("c1d4614a-dc4b-445d-837c-9d58558db93f");
+    private static final UUID ATTACK_SPEED_UUID = UUID.fromString("5de6daef-2e75-4eb3-b825-480ed6952891");
 
-    public CobaltShield(String name, Rarrity rarrity, SlotType slotType) {
+    public EmblemOfFierce(String name, Rarrity rarrity, SlotType slotType) {
         super(name, rarrity, slotType);
     }
 
@@ -27,8 +27,8 @@ public class CobaltShield extends TrinketBase {
     public Multimap<EntityAttribute, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, UUID uuid) {
         Multimap<EntityAttribute, EntityAttributeModifier> modifiers = HashMultimap.create();
 
-        modifiers.put(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE,
-                new EntityAttributeModifier(KNOCKBACK_RESISTANCE_UUID, "Knockback Resistance", 1.0D,
+        modifiers.put(EntityAttributes.GENERIC_ATTACK_SPEED,
+                new EntityAttributeModifier(ATTACK_SPEED_UUID, "Attack Speed", 1,
                         EntityAttributeModifier.Operation.ADDITION));
 
         return modifiers;
