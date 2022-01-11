@@ -1,4 +1,4 @@
-package bucik689.magicalequipments.item.Trinket.Rings;
+package bucik689.magicalequipments.item.Trinket.Artifacts;
 
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
@@ -15,25 +15,22 @@ import net.minecraft.item.ItemStack;
 
 import java.util.UUID;
 
-public class RingHealth extends TrinketBase {
+public class CobaltShield extends TrinketBase {
 
-    private static final UUID HEALTH_UUID = UUID.fromString("b0baf145-e9ab-4d24-8da1-614dc5b76167");
-    private final int healthAmount;
+    private static final UUID HEALTH_UUID = UUID.fromString("c1d4614a-dc4b-445d-837c-9d58558db93f");
 
-    public RingHealth(String name, Rarrity rarrity, SlotType slotType, int healthAmount) {
+    public CobaltShield(String name, Rarrity rarrity, SlotType slotType) {
         super(name, rarrity, slotType);
-        this.healthAmount = healthAmount;
     }
 
     @Override
     public Multimap<EntityAttribute, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, UUID uuid) {
         Multimap<EntityAttribute, EntityAttributeModifier> modifiers = HashMultimap.create();
 
-        modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH,
-                new EntityAttributeModifier(HEALTH_UUID, "Max Health", healthAmount,
+        modifiers.put(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE,
+                new EntityAttributeModifier(HEALTH_UUID, "Knockback Resistance", 1.0D,
                         EntityAttributeModifier.Operation.ADDITION));
 
         return modifiers;
     }
-
 }
