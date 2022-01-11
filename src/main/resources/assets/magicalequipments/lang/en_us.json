@@ -36,6 +36,7 @@
   "item.magicalequipments.advanced_ring_of_speed": "Advanced ring of speed",
   "item.magicalequipments.ring_of_strength": "Ring of strength",
   "item.magicalequipments.advanced_ring_of_strength": "Advanced ring of strength",
+  "item.magicalequipments.ring_of_tank": "Ring of tank",
 
   "magicalequipments.item.description.ring_of_resistance": "Gains resistance effect",
   "magicalequipments.item.description.advanced_ring_of_resistance": "Gains resistance effect",
@@ -45,6 +46,7 @@
   "magicalequipments.item.description.advanced_ring_of_speed": "Gains speed effect",
   "magicalequipments.item.description.ring_of_strength": "Gains strength effect",
   "magicalequipments.item.description.advanced_ring_of_strength": "Gains strength effect",
+  "magicalequipments.item.description.ring_of_tank": "Gains massive resistance but also slowness",
   
 
   "tooltip.magicalequipments.rarrity.common": "Common",
