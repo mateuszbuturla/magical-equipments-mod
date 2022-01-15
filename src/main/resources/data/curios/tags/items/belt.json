@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "magicalequipment:obsidian_skull",
+    "magicalequipment:fast_clock",
+    "magicalequipment:blindfold",
+    "magicalequipment:adhesive_bandage",
+    "magicalequipment:armor_polish",
+    "magicalequipment:cobalt_shield",
+    "magicalequipment:ankh_charm",
+    "magicalequipment:medicated_bandage",
+    "magicalequipment:obsidian_shield",
+    "magicalequipment:ankh_shield",
+    "magicalequipment:armor_bracing",
+    "magicalequipment:vitamins",
+    "magicalequipment:bezoar",
+    "magicalequipment:small_emblem",
+    "magicalequipment:offensive_emblem",
+    "magicalequipment:defensive_emblem",
+    "magicalequipment:emblem_of_absorption",
+    "magicalequipment:emblem_of_fierce"
+  ]
+}
