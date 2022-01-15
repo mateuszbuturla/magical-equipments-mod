@@ -1,5 +1,7 @@
-package net.bucik689.magicalequipment.item;
+package net.bucik689.magicalequipment.item.Material;
 
+import net.bucik689.magicalequipment.item.ModCreativeModeTab;
+import net.bucik689.magicalequipment.item.ModItems;
 import net.minecraft.world.item.Item;
 
 public class Material extends Item {

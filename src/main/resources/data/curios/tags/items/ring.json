@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "magicalequipment:ring_of_health",
+    "magicalequipment:advanced_ring_of_health",
+    "magicalequipment:ring_of_resistance",
+    "magicalequipment:advanced_ring_of_resistance",
+    "magicalequipment:ring_of_speed",
+    "magicalequipment:advanced_ring_of_speed",
+    "magicalequipment:ring_of_strength",
+    "magicalequipment:advanced_ring_of_strength",
+    "magicalequipment:ring_of_tank"
+  ]
+}
