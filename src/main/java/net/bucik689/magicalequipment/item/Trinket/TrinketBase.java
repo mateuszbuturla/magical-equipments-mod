@@ -75,9 +75,12 @@ public class TrinketBase extends Item {
                                                         "tooltip." + MagicalEquipment.MOD_ID + ".rarrity.unique")
                                                                         .withStyle(ChatFormatting.DARK_RED));
                 }
-                pTooltipComponents
-                                .add(new TranslatableComponent("tooltip." + MagicalEquipment.MOD_ID + ".when_equipped")
-                                                .withStyle(ChatFormatting.GOLD));
+                if (this.slotType != SlotType.NONE) {
+                        pTooltipComponents
+                                        .add(new TranslatableComponent(
+                                                        "tooltip." + MagicalEquipment.MOD_ID + ".when_equipped")
+                                                                        .withStyle(ChatFormatting.GOLD));
+                }
                 pTooltipComponents.add(
                                 new TranslatableComponent(MagicalEquipment.MOD_ID + ".item.description." + itemName)
                                                 .withStyle(ChatFormatting.BLUE));

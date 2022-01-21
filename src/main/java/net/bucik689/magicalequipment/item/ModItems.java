@@ -15,6 +15,7 @@ import net.bucik689.magicalequipment.item.Trinket.Artifact.EmblemOfFierce;
 import net.bucik689.magicalequipment.item.Trinket.Artifact.ObsidianShield;
 import net.bucik689.magicalequipment.item.Trinket.Artifact.OffensiveEmblem;
 import net.bucik689.magicalequipment.item.Trinket.Artifact.SmallEmblem;
+import net.bucik689.magicalequipment.item.Trinket.Artifact.VampiricGauntlet;
 import net.bucik689.magicalequipment.item.Trinket.Ring.RingHealth;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.Item;
@@ -109,6 +110,9 @@ public class ModItems {
                         Rarrity.EPIC, SlotType.RING,
                         new ItemEffectParam[] { new ItemEffectParam(MobEffects.DAMAGE_RESISTANCE, 2),
                                         new ItemEffectParam(MobEffects.MOVEMENT_SLOWDOWN, 2) });
+
+        public static final VampiricGauntlet VAMPIRIC_GAUNTLET = new VampiricGauntlet("vampiric_gauntlet",
+                        Rarrity.UNIQUE, SlotType.NONE);
 
         public static void register(IEventBus eventBus) {
                 ITEMS.register(eventBus);

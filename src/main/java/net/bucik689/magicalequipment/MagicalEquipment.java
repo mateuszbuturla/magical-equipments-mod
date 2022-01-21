@@ -18,7 +18,7 @@ import org.apache.logging.log4j.Logger;
 public class MagicalEquipment {
     public static final String MOD_ID = "magicalequipment";
 
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
 
     public MagicalEquipment() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
