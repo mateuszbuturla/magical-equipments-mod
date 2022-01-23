@@ -8,6 +8,7 @@ import net.bucik689.magicalequipment.item.Trinket.SlotType;
 import net.bucik689.magicalequipment.item.Trinket.TrinketEffect;
 import net.bucik689.magicalequipment.item.Trinket.TrinketEffectImmune;
 import net.bucik689.magicalequipment.item.Trinket.Artifact.AnkhShield;
+import net.bucik689.magicalequipment.item.Trinket.Artifact.BloodWell;
 import net.bucik689.magicalequipment.item.Trinket.Artifact.CobaltShield;
 import net.bucik689.magicalequipment.item.Trinket.Artifact.DefensiveEmblem;
 import net.bucik689.magicalequipment.item.Trinket.Artifact.EmblemOfAbsorption;
@@ -112,6 +113,8 @@ public class ModItems {
                                         new ItemEffectParam(MobEffects.MOVEMENT_SLOWDOWN, 2) });
 
         public static final VampiricGauntlet VAMPIRIC_GAUNTLET = new VampiricGauntlet("vampiric_gauntlet",
+                        Rarrity.UNIQUE, SlotType.NONE);
+        public static final BloodWell BLOOD_WELL = new BloodWell("blood_well",
                         Rarrity.UNIQUE, SlotType.NONE);
 
         public static void register(IEventBus eventBus) {

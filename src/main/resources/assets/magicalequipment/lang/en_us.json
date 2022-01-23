@@ -18,6 +18,7 @@
 
   "item.magicalequipment.angel_necklace": "Angel necklace",
   "item.magicalequipment.vampiric_gauntlet": "Vampiric gauntlet",
+  "item.magicalequipment.blood_well": "Blood well",
 
   "item.magicalequipment.small_emblem": "Small emblem",
   "item.magicalequipment.defensive_emblem": "Defensive emblem",
@@ -42,6 +43,8 @@
   "magicalequipment.item.description.angel_necklace": "Gains double jump",
   "magicalequipment.item.description.vampiric_gauntlet": "Allow to storage health",
   "magicalequipment.item.advanced_description.vampiric_gauntlet": "Storage health(shift + rmb), heal(rmb)",
+  "magicalequipment.item.description.blood_well": "Convert your health into attack speed and attack damage",
+  "magicalequipment.item.advanced_description.blood_well": "If active, drains 1 health per 1 second for 4 attack damage and 1 attack speed",
 
   "item.magicalequipment.ring_of_resistance": "Ring of resistance",
   "item.magicalequipment.advanced_ring_of_resistance": "Advanced ring of resistance",
@@ -78,5 +81,8 @@
   "tooltip.magicalequipment.slot.necklace": "Necklace",
   "tooltip.magicalequipment.slot.artifact": "Artifact",
   "tooltip.magicalequipment.when_equipped": "When equipped:",
-  "tooltip.magicalequipment.shift_to_additional_information": "Press shift for additional information:"
+  "tooltip.magicalequipment.shift_to_additional_information": "Press shift for additional information:",
+
+  "key.magicalequipment.items": "Magical equipment",
+  "key.magicalequipment.activate_blood_well": "Activate/Deactivate blood well"
 }
