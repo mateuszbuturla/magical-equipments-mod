@@ -12,6 +12,7 @@ import net.bucik689.magicalequipment.item.Trinket.Artifact.CobaltShield;
 import net.bucik689.magicalequipment.item.Trinket.Artifact.DefensiveEmblem;
 import net.bucik689.magicalequipment.item.Trinket.Artifact.EmblemOfAbsorption;
 import net.bucik689.magicalequipment.item.Trinket.Artifact.EmblemOfFierce;
+import net.bucik689.magicalequipment.item.Trinket.Artifact.FrozenTurtleShell;
 import net.bucik689.magicalequipment.item.Trinket.Artifact.ObsidianShield;
 import net.bucik689.magicalequipment.item.Trinket.Artifact.OffensiveEmblem;
 import net.bucik689.magicalequipment.item.Trinket.Artifact.SmallEmblem;
@@ -110,6 +111,9 @@ public class ModItems {
                         Rarrity.EPIC, SlotType.RING,
                         new ItemEffectParam[] { new ItemEffectParam(MobEffects.DAMAGE_RESISTANCE, 2),
                                         new ItemEffectParam(MobEffects.MOVEMENT_SLOWDOWN, 2) });
+        public static final FrozenTurtleShell FROZEN_TURTLE_SHELL = new FrozenTurtleShell(
+                        "frozen_turtle_shell",
+                        Rarrity.UNIQUE, SlotType.ARTIFACT);
 
         public static final VampiricGauntlet VAMPIRIC_GAUNTLET = new VampiricGauntlet("vampiric_gauntlet",
                         Rarrity.UNIQUE, SlotType.NONE);
