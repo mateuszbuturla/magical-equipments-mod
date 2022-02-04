@@ -24,6 +24,7 @@
   "item.magicalequipment.emblem_of_absorption": "Emblem of absorption",
   "item.magicalequipment.offensive_emblem": "Offensive emblem",
   "item.magicalequipment.emblem_of_fierce": "Emblem of fierce",
+  "item.magicalequipment.frozen_turtle_shell": "Frozen turtle shell",
 
   "magicalequipment.item.description.obsidian_skull": "Gains fire resistance",
   "magicalequipment.item.description.fast_clock": "Gains immunity to slowness",
@@ -58,6 +59,7 @@
   "magicalequipment.item.description.emblem_of_fierce": "Gains 1 attack speed and 3 attack damage",
   "magicalequipment.item.description.defensive_emblem": "Gains 2 armor and 2 armor toughness",
   "magicalequipment.item.description.offensive_emblem": "Gains 2 attack damage and 0.5 attack speed",
+  "magicalequipment.item.description.frozen_turtle_shell": "Gains 4 armor if player has more than half health",
 
   "magicalequipment.item.description.ring_of_resistance": "Gains resistance effect",
   "magicalequipment.item.description.advanced_ring_of_resistance": "Gains resistance effect",
