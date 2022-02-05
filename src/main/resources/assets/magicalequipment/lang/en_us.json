@@ -1,6 +1,22 @@
 {
   "itemGroup.magicalequipment": "Magical equipment",
 
+  "item.magicalequipment.raw_mythril": "Raw mythril",
+  "item.magicalequipment.mythril_ingot": "Mythril ingot",
+
+  "block.magicalequipment.mythril_ore": "Mythril ore",
+
+  "item.magicalequipment.mythril_pickaxe": "Mythril pickaxe",
+  "item.magicalequipment.mythril_axe": "Mythril axe",
+  "item.magicalequipment.mythril_sword": "Mythril sword",
+  "item.magicalequipment.mythril_shovel": "Mythril shovel",
+  "item.magicalequipment.mythril_hoe": "Mythril hoe",
+  "item.magicalequipment.mythril_shopickaxe": "Mythril shopickaxe",
+  "item.magicalequipment.mythril_boots": "Mythril boots",
+  "item.magicalequipment.mythril_leggins": "Mythril leggins",
+  "item.magicalequipment.mythril_chestplate": "Mythril chestplate",
+  "item.magicalequipment.mythril_helmet": "Mythril helmet",
+
   "item.magicalequipment.obsidian_chunk": "Obsidian chunk",
   "item.magicalequipment.obsidian_skull": "Obsidian skull",
   "item.magicalequipment.fast_clock": "Fast clock",
