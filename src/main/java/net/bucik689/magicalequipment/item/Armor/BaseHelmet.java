@@ -8,7 +8,7 @@ import net.minecraft.world.item.Item;
 
 public class BaseHelmet extends ArmorItem {
     public BaseHelmet(String itemName, ModArmorMaterial material) {
-        super(material, EquipmentSlot.HEAD, new Item.Properties().tab(ModCreativeModeTab.MAGICAL_EQUIPMENT_TAB));
+        super(material, EquipmentSlot.HEAD, new Item.Properties().tab(ModCreativeModeTab.ARMOR_TAB));
         ModItems.ITEMS.register(itemName, () -> this);
     }
 }

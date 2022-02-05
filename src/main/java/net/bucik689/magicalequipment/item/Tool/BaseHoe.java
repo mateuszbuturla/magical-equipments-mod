@@ -11,7 +11,7 @@ public class BaseHoe extends HoeItem {
 
     public BaseHoe(String itemName, ForgeTier tier) {
         super(tier, -7, 1,
-                new Item.Properties().tab(ModCreativeModeTab.MAGICAL_EQUIPMENT_TAB));
+                new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB));
         ModItems.ITEMS.register(itemName, () -> this);
     }
 }

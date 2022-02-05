@@ -11,7 +11,7 @@ import net.minecraft.world.item.Vanishable;
 public class BasePaxel extends DiggerItem implements Vanishable {
     public BasePaxel(String itemName, Tier tier) {
         super(0, -3, tier, ModTags.Blocks.PAXEL_MINEABLE,
-                new Item.Properties().tab(ModCreativeModeTab.MAGICAL_EQUIPMENT_TAB));
+                new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB));
         ModItems.ITEMS.register(itemName, () -> this);
     }
 

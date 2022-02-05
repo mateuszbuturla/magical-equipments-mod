@@ -10,7 +10,7 @@ public class BaseSword extends SwordItem {
 
     public BaseSword(String itemName, ForgeTier tier) {
         super(tier, 0, -2.4F,
-                new Item.Properties().tab(ModCreativeModeTab.MAGICAL_EQUIPMENT_TAB));
+                new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB));
         ModItems.ITEMS.register(itemName, () -> this);
     }
 }

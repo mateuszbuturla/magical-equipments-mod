@@ -1,5 +1,9 @@
 {
-  "itemGroup.magicalequipment": "Magical equipment",
+  "itemGroup.magicalequipment_materials": "Magical equipment - materials",
+  "itemGroup.magicalequipment_tools": "Magical equipment - tools",
+  "itemGroup.magicalequipment_armors": "Magical equipment - armors",
+  "itemGroup.magicalequipment_blocks": "Magical equipment - blocks",
+  "itemGroup.magicalequipment_accessories": "Magical equipment - accessories",
 
   "item.magicalequipment.raw_mythril": "Raw mythril",
   "item.magicalequipment.mythril_ingot": "Mythril ingot",

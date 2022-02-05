@@ -11,7 +11,7 @@ public class BaseAxe extends AxeItem {
 
     public BaseAxe(String itemName, ForgeTier tier) {
         super(tier, 2F, -3F,
-                new Item.Properties().tab(ModCreativeModeTab.MAGICAL_EQUIPMENT_TAB));
+                new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB));
         ModItems.ITEMS.register(itemName, () -> this);
     }
 }
