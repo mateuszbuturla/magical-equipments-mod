@@ -2,6 +2,7 @@ package net.bucik689.magicalequipment.item;
 
 import net.bucik689.magicalequipment.MagicalEquipment;
 import net.bucik689.magicalequipment.item.Armor.BaseBoots;
+import net.bucik689.magicalequipment.item.Armor.BaseChestplate;
 import net.bucik689.magicalequipment.item.Armor.BaseLeggins;
 import net.bucik689.magicalequipment.item.Armor.ModArmorMaterial;
 import net.bucik689.magicalequipment.item.Material.Material;
@@ -48,6 +49,8 @@ public class ModItems {
         public static final BasePaxel MYTHRIL_SHOPICKAXE = new BasePaxel("mythril_shopickaxe", ModTiers.MYTHRIL);
         public static final BaseBoots MYTHRIL_BOOTS = new BaseBoots("mythril_boots", ModArmorMaterial.MYTHRIL);
         public static final BaseLeggins MYTHRIL_LEGGINGS = new BaseLeggins("mythril_leggins", ModArmorMaterial.MYTHRIL);
+        public static final BaseChestplate MYTHRIL_CHESTPLATE = new BaseChestplate("mythril_chestplate",
+                        ModArmorMaterial.MYTHRIL);
 
         public static final Material OBSIDIAN_CHUNK = new Material("obsidian_chunk");
         public static final TrinketEffect OBSIDIAN_SKULL = new TrinketEffect("obsidian_skull", Rarrity.COMMON,
