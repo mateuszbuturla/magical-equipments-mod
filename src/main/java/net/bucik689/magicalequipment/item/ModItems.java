@@ -1,6 +1,8 @@
 package net.bucik689.magicalequipment.item;
 
 import net.bucik689.magicalequipment.MagicalEquipment;
+import net.bucik689.magicalequipment.item.Armor.BaseBoots;
+import net.bucik689.magicalequipment.item.Armor.ModArmorMaterial;
 import net.bucik689.magicalequipment.item.Material.Material;
 import net.bucik689.magicalequipment.item.Tool.BaseAxe;
 import net.bucik689.magicalequipment.item.Tool.BaseHoe;
@@ -43,6 +45,7 @@ public class ModItems {
         public static final BaseShovel MYTHRIL_SHOVEL = new BaseShovel("mythril_shovel", ModTiers.MYTHRIL);
         public static final BaseHoe MYTHRIL_HOE = new BaseHoe("mythril_hoe", ModTiers.MYTHRIL);
         public static final BasePaxel MYTHRIL_SHOPICKAXE = new BasePaxel("mythril_shopickaxe", ModTiers.MYTHRIL);
+        public static final BaseBoots MYTHRIL_BOOTS = new BaseBoots("mythril_boots", ModArmorMaterial.MYTHRIL);
 
         public static final Material OBSIDIAN_CHUNK = new Material("obsidian_chunk");
         public static final TrinketEffect OBSIDIAN_SKULL = new TrinketEffect("obsidian_skull", Rarrity.COMMON,
