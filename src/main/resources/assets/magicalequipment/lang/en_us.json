@@ -5,6 +5,13 @@
 
   "block.magicalequipment.mythril_ore": "Mythril ore",
 
+  "item.magicalequipment.mythril_pickaxe": "Mythril pickaxe",
+  "item.magicalequipment.mythril_axe": "Mythril axe",
+  "item.magicalequipment.mythril_sword": "Mythril sword",
+  "item.magicalequipment.mythril_shovel": "Mythril shovel",
+  "item.magicalequipment.mythril_hoe": "Mythril hoe",
+  "item.magicalequipment.mythril_shopickaxe": "Mythril shopickaxe",
+
   "item.magicalequipment.obsidian_chunk": "Obsidian chunk",
   "item.magicalequipment.obsidian_skull": "Obsidian skull",
   "item.magicalequipment.fast_clock": "Fast clock",
