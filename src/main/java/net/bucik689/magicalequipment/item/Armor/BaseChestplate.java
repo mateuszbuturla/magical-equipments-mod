@@ -8,7 +8,7 @@ import net.minecraft.world.item.Item;
 
 public class BaseChestplate extends ArmorItem {
     public BaseChestplate(String itemName, ModArmorMaterial material) {
-        super(material, EquipmentSlot.CHEST, new Item.Properties().tab(ModCreativeModeTab.MAGICAL_EQUIPMENT_TAB));
+        super(material, EquipmentSlot.CHEST, new Item.Properties().tab(ModCreativeModeTab.ARMOR_TAB));
         ModItems.ITEMS.register(itemName, () -> this);
     }
 }

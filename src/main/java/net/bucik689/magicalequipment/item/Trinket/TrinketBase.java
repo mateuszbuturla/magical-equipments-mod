@@ -21,7 +21,7 @@ public class TrinketBase extends Item {
         private final SlotType slotType;
 
         public TrinketBase(String itemName, Rarrity rarrity, SlotType slotType) {
-                super(new Item.Properties().stacksTo(1).tab(ModCreativeModeTab.MAGICAL_EQUIPMENT_TAB));
+                super(new Item.Properties().stacksTo(1).tab(ModCreativeModeTab.ACCESSORIES_TAB));
                 this.itemName = itemName;
                 this.rarrity = rarrity;
                 this.slotType = slotType;

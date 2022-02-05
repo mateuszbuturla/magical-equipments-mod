@@ -10,7 +10,7 @@ public class BasePickaxe extends PickaxeItem {
 
     public BasePickaxe(String itemName, ForgeTier tier) {
         super(tier, -2, -2.8F,
-                new Item.Properties().tab(ModCreativeModeTab.MAGICAL_EQUIPMENT_TAB));
+                new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB));
         ModItems.ITEMS.register(itemName, () -> this);
     }
 }

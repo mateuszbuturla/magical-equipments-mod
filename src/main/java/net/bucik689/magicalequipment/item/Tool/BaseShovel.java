@@ -10,7 +10,7 @@ public class BaseShovel extends ShovelItem {
 
     public BaseShovel(String itemName, ForgeTier tier) {
         super(tier, -1.5F, -3F,
-                new Item.Properties().tab(ModCreativeModeTab.MAGICAL_EQUIPMENT_TAB));
+                new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB));
         ModItems.ITEMS.register(itemName, () -> this);
     }
 }

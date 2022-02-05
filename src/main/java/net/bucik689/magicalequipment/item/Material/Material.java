@@ -9,7 +9,7 @@ public class Material extends Item {
     public final String itemName;
 
     public Material(String itemName) {
-        super(new Item.Properties().tab(ModCreativeModeTab.MAGICAL_EQUIPMENT_TAB));
+        super(new Item.Properties().tab(ModCreativeModeTab.MATERIALS_TAB));
         this.itemName = itemName;
         ModItems.ITEMS.register(itemName, () -> this);
     }

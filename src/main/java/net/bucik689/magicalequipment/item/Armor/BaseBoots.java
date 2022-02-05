@@ -8,7 +8,7 @@ import net.minecraft.world.item.Item;
 
 public class BaseBoots extends ArmorItem {
     public BaseBoots(String itemName, ModArmorMaterial material) {
-        super(material, EquipmentSlot.FEET, new Item.Properties().tab(ModCreativeModeTab.MAGICAL_EQUIPMENT_TAB));
+        super(material, EquipmentSlot.FEET, new Item.Properties().tab(ModCreativeModeTab.ARMOR_TAB));
         ModItems.ITEMS.register(itemName, () -> this);
     }
 }

@@ -36,7 +36,7 @@ public class BlockBase {
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(),
-                new Item.Properties().tab(ModCreativeModeTab.MAGICAL_EQUIPMENT_TAB)));
+                new Item.Properties().tab(ModCreativeModeTab.BLOCKS_TAB)));
     }
 
     public Block get() {
