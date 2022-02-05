@@ -2,6 +2,7 @@ package net.bucik689.magicalequipment.item;
 
 import net.bucik689.magicalequipment.MagicalEquipment;
 import net.bucik689.magicalequipment.item.Material.Material;
+import net.bucik689.magicalequipment.item.Tool.BasePickaxe;
 import net.bucik689.magicalequipment.item.Trinket.ItemEffectParam;
 import net.bucik689.magicalequipment.item.Trinket.ItemEffectImmuneParam;
 import net.bucik689.magicalequipment.item.Trinket.SlotType;
@@ -29,6 +30,8 @@ public class ModItems {
                         MagicalEquipment.MOD_ID);
 
         public static final Material RAW_MYTHRIL = new Material("raw_mythril");
+
+        public static final BasePickaxe MYTHRIL_PICKAXE = new BasePickaxe("mythril_pickaxe", ModTiers.MYTHRIL);
 
         public static final Material OBSIDIAN_CHUNK = new Material("obsidian_chunk");
         public static final TrinketEffect OBSIDIAN_SKULL = new TrinketEffect("obsidian_skull", Rarrity.COMMON,
