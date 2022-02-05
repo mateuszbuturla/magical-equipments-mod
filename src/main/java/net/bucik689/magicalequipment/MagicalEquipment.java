@@ -1,5 +1,6 @@
 package net.bucik689.magicalequipment;
 
+import net.bucik689.magicalequipment.block.ModBlock;
 import net.bucik689.magicalequipment.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -24,6 +25,7 @@ public class MagicalEquipment {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
+        ModBlock.register(eventBus);
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::enqueueIMC);

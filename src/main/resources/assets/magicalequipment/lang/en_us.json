@@ -1,6 +1,10 @@
 {
   "itemGroup.magicalequipment": "Magical equipment",
 
+  "item.magicalequipment.raw_mythril": "Raw mythril",
+
+  "block.magicalequipment.mythril_ore": "Mythril ore",
+
   "item.magicalequipment.obsidian_chunk": "Obsidian chunk",
   "item.magicalequipment.obsidian_skull": "Obsidian skull",
   "item.magicalequipment.fast_clock": "Fast clock",

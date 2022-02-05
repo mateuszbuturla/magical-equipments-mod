@@ -28,6 +28,8 @@ public class ModItems {
         public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS,
                         MagicalEquipment.MOD_ID);
 
+        public static final Material RAW_MYTHRIL = new Material("raw_mythril");
+
         public static final Material OBSIDIAN_CHUNK = new Material("obsidian_chunk");
         public static final TrinketEffect OBSIDIAN_SKULL = new TrinketEffect("obsidian_skull", Rarrity.COMMON,
                         SlotType.ARTIFACT,
