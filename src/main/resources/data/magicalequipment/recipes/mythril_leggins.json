@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["111", "1 1", "1 1"],
+  "key": {
+    "1": {
+      "item": "magicalequipment:mythril_ingot"
+    }
+  },
+  "result": {
+    "item": "magicalequipment:mythril_leggins"
+  }
+}
