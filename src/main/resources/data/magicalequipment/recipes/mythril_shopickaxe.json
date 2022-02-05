@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["12 ", "3  ", "   "],
+  "key": {
+    "1": {
+      "item": "magicalequipment:mythril_axe"
+    },
+    "2": {
+      "item": "magicalequipment:mythril_pickaxe"
+    },
+    "3": {
+      "item": "magicalequipment:mythril_shovel"
+    }
+  },
+  "result": {
+    "item": "magicalequipment:mythril_shopickaxe"
+  }
+}

@@ -35,6 +35,7 @@ public class ModItems {
                         MagicalEquipment.MOD_ID);
 
         public static final Material RAW_MYTHRIL = new Material("raw_mythril");
+        public static final Material MYTHRIL_INGOT = new Material("mythril_ingot");
 
         public static final BasePickaxe MYTHRIL_PICKAXE = new BasePickaxe("mythril_pickaxe", ModTiers.MYTHRIL);
         public static final BaseAxe MYTHRIL_AXE = new BaseAxe("mythril_axe", ModTiers.MYTHRIL);
