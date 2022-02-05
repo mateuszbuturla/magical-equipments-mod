@@ -11,7 +11,7 @@ import net.minecraftforge.common.util.Lazy;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterial implements ArmorMaterial {
-    MYTHRIL("mythril", 37, new int[] { 3, 3, 8, 6 }, 10,
+    MYTHRIL("mythril", 37, new int[] { 3, 6, 8, 3 }, 10,
             SoundEvents.ARMOR_EQUIP_IRON, 2.5F, 0.1F, () -> {
                 return Ingredient.of(ModItems.MYTHRIL_INGOT);
             });
