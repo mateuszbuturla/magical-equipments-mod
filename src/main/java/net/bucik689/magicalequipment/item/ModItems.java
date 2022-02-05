@@ -4,6 +4,7 @@ import net.bucik689.magicalequipment.MagicalEquipment;
 import net.bucik689.magicalequipment.item.Material.Material;
 import net.bucik689.magicalequipment.item.Tool.BaseAxe;
 import net.bucik689.magicalequipment.item.Tool.BasePickaxe;
+import net.bucik689.magicalequipment.item.Tool.BaseShovel;
 import net.bucik689.magicalequipment.item.Tool.BaseSword;
 import net.bucik689.magicalequipment.item.Trinket.ItemEffectParam;
 import net.bucik689.magicalequipment.item.Trinket.ItemEffectImmuneParam;
@@ -36,6 +37,7 @@ public class ModItems {
         public static final BasePickaxe MYTHRIL_PICKAXE = new BasePickaxe("mythril_pickaxe", ModTiers.MYTHRIL);
         public static final BaseAxe MYTHRIL_AXE = new BaseAxe("mythril_axe", ModTiers.MYTHRIL);
         public static final BaseSword MYTHRIL_SWORD = new BaseSword("mythril_sword", ModTiers.MYTHRIL);
+        public static final BaseShovel MYTHRIL_SHOVEL = new BaseShovel("mythril_shovel", ModTiers.MYTHRIL);
 
         public static final Material OBSIDIAN_CHUNK = new Material("obsidian_chunk");
         public static final TrinketEffect OBSIDIAN_SKULL = new TrinketEffect("obsidian_skull", Rarrity.COMMON,
