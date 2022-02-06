@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["12 ", "3  ", "   "],
+  "key": {
+    "1": {
+      "item": "magicalequipment:adamantite_axe"
+    },
+    "2": {
+      "item": "magicalequipment:adamantite_pickaxe"
+    },
+    "3": {
+      "item": "magicalequipment:adamantite_shovel"
+    }
+  },
+  "result": {
+    "item": "magicalequipment:adamantite_shopickaxe"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" 1 ", " 1 ", " 2 "],
+  "key": {
+    "1": {
+      "item": "magicalequipment:adamantite_ingot"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "magicalequipment:adamantite_sword"
+  }
+}

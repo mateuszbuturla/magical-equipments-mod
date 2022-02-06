@@ -38,6 +38,7 @@ public class ModItems {
 
         public static final BaseTools MYTHRIL_TOOLS = new BaseTools("mythril", ModTiers.MYTHRIL);
         public static final BaseArmor MYTHRIL_ARMOR = new BaseArmor("mythril", ModArmorMaterial.MYTHRIL);
+        public static final BaseTools ADAMANTITE_TOOLS = new BaseTools("adamantite", ModTiers.ADAMANTITE);
 
         public static final Material OBSIDIAN_CHUNK = new Material("obsidian_chunk");
         public static final TrinketEffect OBSIDIAN_SKULL = new TrinketEffect("obsidian_skull", Rarrity.COMMON,
