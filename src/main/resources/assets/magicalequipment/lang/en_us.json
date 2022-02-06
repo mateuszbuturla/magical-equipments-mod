@@ -7,8 +7,11 @@
 
   "item.magicalequipment.raw_mythril": "Raw mythril",
   "item.magicalequipment.mythril_ingot": "Mythril ingot",
+  "item.magicalequipment.raw_adamantite": "Raw adamantite",
+  "item.magicalequipment.adamantite_ingot": "Adamantite ingot",
 
   "block.magicalequipment.mythril_ore": "Mythril ore",
+  "block.magicalequipment.adamantite_ore": "Adamantite ore",
 
   "item.magicalequipment.mythril_pickaxe": "Mythril pickaxe",
   "item.magicalequipment.mythril_axe": "Mythril axe",

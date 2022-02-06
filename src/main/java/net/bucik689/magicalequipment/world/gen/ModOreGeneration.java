@@ -14,5 +14,6 @@ public class ModOreGeneration {
                 .getFeatures(GenerationStep.Decoration.UNDERGROUND_ORES);
 
         base.add(() -> ModPlacedFeatures.MYTHRIL_ORE_PLACED);
+        base.add(() -> ModPlacedFeatures.ADAMANTITE_ORE_PLACED);
     }
 }

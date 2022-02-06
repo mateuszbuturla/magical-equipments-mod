@@ -33,6 +33,8 @@ public class ModItems {
 
         public static final Material RAW_MYTHRIL = new Material("raw_mythril");
         public static final Material MYTHRIL_INGOT = new Material("mythril_ingot");
+        public static final Material RAW_ADAMANTITE = new Material("raw_adamantite");
+        public static final Material ADAMANTITE_INGOT = new Material("adamantite_ingot");
 
         public static final BaseTools MYTHRIL_TOOLS = new BaseTools("mythril", ModTiers.MYTHRIL);
         public static final BaseArmor MYTHRIL_ARMOR = new BaseArmor("mythril", ModArmorMaterial.MYTHRIL);
