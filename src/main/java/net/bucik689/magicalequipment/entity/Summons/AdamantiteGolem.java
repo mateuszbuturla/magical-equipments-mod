@@ -1,6 +1,7 @@
 package net.bucik689.magicalequipment.entity.Summons;
 
 import net.bucik689.magicalequipment.entity.BaseSummonEntity;
+import net.bucik689.magicalequipment.entity.Goals.TeleportOwnerGoal;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
@@ -46,13 +47,12 @@ public class AdamantiteGolem extends BaseSummonEntity implements IAnimatable, IA
     @Override
     public void registerGoals() {
         this.goalSelector.addGoal(1, new FloatGoal(this));
-        this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.0D, true));
-        this.goalSelector.addGoal(4, new MoveTowardsTargetGoal(this, 0.9D, 64.0F));
-        this.targetSelector.addGoal(3,
-                new NearestAttackableTargetGoal<>(this, Mob.class, 5, false, false, (target) -> {
+        this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.0D, true));
+        this.targetSelector.addGoal(2,
+                new NearestAttackableTargetGoal<>(this, Mob.class, 0, true, false, (target) -> {
                     return target instanceof Enemy;
                 }));
-        this.goalSelector.addGoal(6, new LookAtPlayerGoal(this, Player.class, 6.0F));
+        this.goalSelector.addGoal(4, new LookAtPlayerGoal(this, Player.class, 6.0F));
     }
 
     public static AttributeSupplier.Builder createAttributes() {
