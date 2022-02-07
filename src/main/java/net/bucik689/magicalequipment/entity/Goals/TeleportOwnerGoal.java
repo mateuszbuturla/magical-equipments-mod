@@ -1,42 +1,40 @@
 package net.bucik689.magicalequipment.entity.Goals;
 
+import net.bucik689.magicalequipment.MagicalEquipment;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.goal.Goal;
-import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.phys.Vec3;
 
-public class FollowOwnerGoal extends Goal {
+public class TeleportOwnerGoal extends Goal {
 
     private final Mob entity;
     private final LivingEntity owner;
-    private final PathNavigation navigation;
 
-    public FollowOwnerGoal(Mob entity, LivingEntity owner, PathNavigation navigation) {
+    public TeleportOwnerGoal(Mob entity, LivingEntity owner) {
         this.entity = entity;
         this.owner = owner;
-        this.navigation = navigation;
     }
 
     public boolean canUse() {
 
-        if (this.owner == null || this.entity.getTarget() != null) {
+        if (owner == null) {
             return false;
         }
 
-        if (this.distanceToSqr(this.owner) < 24) {
-            return false;
+        MagicalEquipment.LOGGER.info(this.distanceToSqr(this.owner));
+
+        if (this.distanceToSqr(this.owner) > 300) {
+            this.teleportToOwner();
         }
 
-        return true;
+        return false;
     }
 
-    @Override
-    public void tick() {
-        super.tick();
-
-        this.navigation.moveTo(this.owner, 1);
+    public void teleportToOwner() {
+        this.entity.setPosRaw(this.owner.getX(), this.owner.getY(), this.owner.getZ());
+        this.entity.setTarget(null);
     }
 
     public double distanceToSqr(Entity pEntity) {
