@@ -11,4 +11,9 @@ public class ModPlacedFeatures {
                                         HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80),
                                                         VerticalAnchor.aboveBottom(80)))));
 
+        public static final PlacedFeature ADAMANTITE_ORE_PLACED = PlacementUtils.register("adamantite_ore_placed",
+                        ModConfiguredFeature.ADAMANTITE_ORE.placed(ModOrePlacement.commonOrePlacement(7,
+                                        HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80),
+                                                        VerticalAnchor.aboveBottom(80)))));
+
 }

@@ -7,8 +7,11 @@
 
   "item.magicalequipment.raw_mythril": "Raw mythril",
   "item.magicalequipment.mythril_ingot": "Mythril ingot",
+  "item.magicalequipment.raw_adamantite": "Raw adamantite",
+  "item.magicalequipment.adamantite_ingot": "Adamantite ingot",
 
   "block.magicalequipment.mythril_ore": "Mythril ore",
+  "block.magicalequipment.adamantite_ore": "Adamantite ore",
 
   "item.magicalequipment.mythril_pickaxe": "Mythril pickaxe",
   "item.magicalequipment.mythril_axe": "Mythril axe",
@@ -20,6 +23,16 @@
   "item.magicalequipment.mythril_leggins": "Mythril leggins",
   "item.magicalequipment.mythril_chestplate": "Mythril chestplate",
   "item.magicalequipment.mythril_helmet": "Mythril helmet",
+  "item.magicalequipment.adamantite_pickaxe": "Adamantite pickaxe",
+  "item.magicalequipment.adamantite_axe": "Adamantite axe",
+  "item.magicalequipment.adamantite_sword": "Adamantite sword",
+  "item.magicalequipment.adamantite_shovel": "Adamantite shovel",
+  "item.magicalequipment.adamantite_hoe": "Adamantite hoe",
+  "item.magicalequipment.adamantite_shopickaxe": "Adamantite shopickaxe",
+  "item.magicalequipment.adamantite_boots": "Adamantite boots",
+  "item.magicalequipment.adamantite_leggins": "Adamantite leggins",
+  "item.magicalequipment.adamantite_chestplate": "Adamantite chestplate",
+  "item.magicalequipment.adamantite_helmet": "Adamantite helmet",
 
   "item.magicalequipment.obsidian_chunk": "Obsidian chunk",
   "item.magicalequipment.obsidian_skull": "Obsidian skull",
@@ -45,6 +58,9 @@
   "item.magicalequipment.offensive_emblem": "Offensive emblem",
   "item.magicalequipment.emblem_of_fierce": "Emblem of fierce",
   "item.magicalequipment.frozen_turtle_shell": "Frozen turtle shell",
+
+  "magicalequipment.item.description.adamantite_set": "When equipped full set summon Adamantite golem",
+  "magicalequipment.item.advanced_description.adamantite_set": "Golem respawn time: 2 min",
 
   "magicalequipment.item.description.obsidian_skull": "Gains fire resistance",
   "magicalequipment.item.description.fast_clock": "Gains immunity to slowness",

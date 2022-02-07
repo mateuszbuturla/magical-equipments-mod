@@ -13,6 +13,7 @@ public class ModBlock {
             MagicalEquipment.MOD_ID);
 
     public static final BlockBase MYTHRIL_ORE = new BlockBase("mythril_ore", Material.STONE, 8f, true);
+    public static final BlockBase ADAMANTITE_ORE = new BlockBase("adamantite_ore", Material.STONE, 9f, true);
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

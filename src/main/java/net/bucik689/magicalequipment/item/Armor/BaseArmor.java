@@ -10,9 +10,9 @@ public class BaseArmor {
 
     public BaseArmor(String setName, ModArmorMaterial material) {
         this.setName = setName;
-        this.BOOTS = new BaseBoots(setName + "_boots", material);
-        this.LEGGINGS = new BaseLeggins(setName + "_leggins", material);
-        this.CHESTPLATE = new BaseChestplate(setName + "_chestplate", material);
-        this.HELMET = new BaseHelmet(setName + "_helmet", material);
+        this.BOOTS = new BaseBoots(setName + "_boots", material, null, null);
+        this.LEGGINGS = new BaseLeggins(setName + "_leggins", material, null, null);
+        this.CHESTPLATE = new BaseChestplate(setName + "_chestplate", material, null, null);
+        this.HELMET = new BaseHelmet(setName + "_helmet", material, null, null);
     }
 }

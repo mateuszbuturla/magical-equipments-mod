@@ -1,8 +1,9 @@
 package net.bucik689.magicalequipment;
 
 import net.bucik689.magicalequipment.block.ModBlock;
+import net.bucik689.magicalequipment.entity.ModEntities;
+import net.bucik689.magicalequipment.event.AdamantiteGolemEvent;
 import net.bucik689.magicalequipment.item.ModItems;
-import net.bucik689.magicalequipment.util.ModTags;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.InterModComms;
@@ -10,6 +11,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import software.bernie.geckolib3.GeckoLib;
 import top.theillusivec4.curios.api.SlotTypeMessage;
 import top.theillusivec4.curios.api.SlotTypePreset;
 
@@ -23,15 +25,18 @@ public class MagicalEquipment {
     public static final Logger LOGGER = LogManager.getLogger();
 
     public MagicalEquipment() {
+        GeckoLib.initialize();
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
         ModBlock.register(eventBus);
+        ModEntities.register(eventBus);
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::enqueueIMC);
 
         MinecraftForge.EVENT_BUS.register(this);
+        MinecraftForge.EVENT_BUS.register(new AdamantiteGolemEvent());
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event) {

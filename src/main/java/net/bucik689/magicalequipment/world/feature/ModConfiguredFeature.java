@@ -20,4 +20,13 @@ public class ModConfiguredFeature {
         public static final ConfiguredFeature<?, ?> MYTHRIL_ORE = FeatureUtils.register("mythril_ore",
                         Feature.ORE.configured(new OreConfiguration(OVERWORLD_MYTHRIL_ORES, 4)));
 
+        public static final List<OreConfiguration.TargetBlockState> OVERWORLD_ADAMANTITE_ORES = List.of(
+                        OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES,
+                                        ModBlock.ADAMANTITE_ORE.get().defaultBlockState()),
+                        OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES,
+                                        ModBlock.ADAMANTITE_ORE.get().defaultBlockState()));
+
+        public static final ConfiguredFeature<?, ?> ADAMANTITE_ORE = FeatureUtils.register("adamantite_ore",
+                        Feature.ORE.configured(new OreConfiguration(OVERWORLD_ADAMANTITE_ORES, 4)));
+
 }
