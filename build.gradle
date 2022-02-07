@@ -125,7 +125,7 @@ repositories {
     // flatDir {
     //     dir 'libs'
     // }
-
+    maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
     maven {
         url = "https://maven.theillusivec4.top/"
     }
@@ -138,6 +138,7 @@ dependencies {
     minecraft 'net.minecraftforge:forge:1.18.1-39.0.5'
     runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.18.1-5.0.5.1")
     compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.18.1-5.0.5.1:api")
+    implementation fg.deobf('software.bernie.geckolib:geckolib-1.18-forge:3.0.11')
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency

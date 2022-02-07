@@ -3,6 +3,7 @@ package net.bucik689.magicalequipment.item;
 import net.bucik689.magicalequipment.MagicalEquipment;
 import net.bucik689.magicalequipment.item.Armor.BaseArmor;
 import net.bucik689.magicalequipment.item.Armor.ModArmorMaterial;
+import net.bucik689.magicalequipment.item.Armor.Adamantite.AdamantiteArmor;
 import net.bucik689.magicalequipment.item.Material.Material;
 import net.bucik689.magicalequipment.item.Tool.BaseTools;
 import net.bucik689.magicalequipment.item.Trinket.ItemEffectParam;
@@ -38,8 +39,9 @@ public class ModItems {
 
         public static final BaseTools MYTHRIL_TOOLS = new BaseTools("mythril", ModTiers.MYTHRIL);
         public static final BaseArmor MYTHRIL_ARMOR = new BaseArmor("mythril", ModArmorMaterial.MYTHRIL);
+
         public static final BaseTools ADAMANTITE_TOOLS = new BaseTools("adamantite", ModTiers.ADAMANTITE);
-        public static final BaseArmor ADAMANTITE_ARMOR = new BaseArmor("adamantite", ModArmorMaterial.ADAMANTITE);
+        public static final AdamantiteArmor ADAMANTITE_ARMOR = new AdamantiteArmor();
 
         public static final Material OBSIDIAN_CHUNK = new Material("obsidian_chunk");
         public static final TrinketEffect OBSIDIAN_SKULL = new TrinketEffect("obsidian_skull", Rarrity.COMMON,
