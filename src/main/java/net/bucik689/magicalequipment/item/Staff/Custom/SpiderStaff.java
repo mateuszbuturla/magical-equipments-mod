@@ -1,8 +1,7 @@
 package net.bucik689.magicalequipment.item.Staff.Custom;
 
-import net.bucik689.magicalequipment.MagicalEquipment;
 import net.bucik689.magicalequipment.entity.ModEntities;
-import net.bucik689.magicalequipment.entity.Summons.AdamantiteGolem;
+import net.bucik689.magicalequipment.entity.Summons.Spider;
 import net.bucik689.magicalequipment.item.Staff.BaseSummoningStaff;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Player;
@@ -15,11 +14,9 @@ public class SpiderStaff extends BaseSummoningStaff {
 
     @Override
     public void summonEntity(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
-        AdamantiteGolem newGolem = new AdamantiteGolem(ModEntities.ADAMANTITE_GOLEM.get(), pLevel);
-        newGolem.setPos(pPlayer.getX(), pPlayer.getY(), pPlayer.getZ());
-        newGolem.setOwner(pPlayer);
-        if (pLevel.addFreshEntity(newGolem)) {
-            MagicalEquipment.LOGGER.info("ADDED");
-        }
+        Spider newSpider = new Spider(ModEntities.SPIDER.get(), pLevel);
+        newSpider.setPos(pPlayer.getX(), pPlayer.getY(), pPlayer.getZ());
+        newSpider.setOwner(pPlayer);
+        pLevel.addFreshEntity(newSpider);
     }
 }

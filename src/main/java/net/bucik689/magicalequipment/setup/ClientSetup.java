@@ -1,8 +1,8 @@
 package net.bucik689.magicalequipment.setup;
 
 import net.bucik689.magicalequipment.MagicalEquipment;
-import net.bucik689.magicalequipment.client.entity.model.AdamantiteGolemModel;
 import net.bucik689.magicalequipment.client.entity.renderer.AdamantiteGolemRenderer;
+import net.bucik689.magicalequipment.client.entity.renderer.SpiderRenderer;
 import net.bucik689.magicalequipment.entity.ModEntities;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
@@ -18,6 +18,7 @@ public class ClientSetup {
     public static void registerRenderers(final EntityRenderersEvent.RegisterRenderers event) {
         if (!FMLEnvironment.production && !GeckoLibMod.DISABLE_IN_DEV) {
             event.registerEntityRenderer(ModEntities.ADAMANTITE_GOLEM.get(), AdamantiteGolemRenderer::new);
+            event.registerEntityRenderer(ModEntities.SPIDER.get(), SpiderRenderer::new);
         }
     }
 
