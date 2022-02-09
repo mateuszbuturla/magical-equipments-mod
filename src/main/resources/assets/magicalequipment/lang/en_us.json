@@ -62,6 +62,8 @@
   "magicalequipment.item.description.adamantite_set": "When equipped full set summon Adamantite golem",
   "magicalequipment.item.advanced_description.adamantite_set": "Golem respawn time: 2 min",
 
+  "magicalequipment.item.description.spider_staff": "Spider staff",
+
   "magicalequipment.item.description.obsidian_skull": "Gains fire resistance",
   "magicalequipment.item.description.fast_clock": "Gains immunity to slowness",
   "magicalequipment.item.description.blindfold": "Gains immunity to blindness",
@@ -106,6 +108,8 @@
   "magicalequipment.item.description.ring_of_strength": "Gains strength effect",
   "magicalequipment.item.description.advanced_ring_of_strength": "Gains strength effect",
   "magicalequipment.item.description.ring_of_tank": "Gains massive resistance but also slowness",
+
+  "magicalequipment.entity_cannot_be_summoned": "Entity cannot be summoned",
 
   "tooltip.magicalequipment.rarrity.common": "Common",
   "tooltip.magicalequipment.rarrity.rare": "Rare",

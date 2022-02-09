@@ -11,6 +11,7 @@ public class BaseSummonEntity extends PathfinderMob {
 
     private final int followOwnerGoalPriority;
     private LivingEntity owner;
+    public Boolean test;
 
     public BaseSummonEntity(EntityType<? extends PathfinderMob> type, Level worldIn, int followOwnerGoalPriority) {
         super(type, worldIn);
@@ -25,6 +26,10 @@ public class BaseSummonEntity extends PathfinderMob {
         this.owner = owner;
         this.goalSelector.addGoal(0, new TeleportOwnerGoal(this, owner));
         this.goalSelector.addGoal(this.followOwnerGoalPriority, new FollowOwnerGoal(this, owner, this.getNavigation()));
+    }
+
+    public void setTest(Boolean test) {
+        this.test = test;
     }
 
     public LivingEntity getOwner() {
