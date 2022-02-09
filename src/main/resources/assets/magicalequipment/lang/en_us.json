@@ -109,8 +109,6 @@
   "magicalequipment.item.description.advanced_ring_of_strength": "Gains strength effect",
   "magicalequipment.item.description.ring_of_tank": "Gains massive resistance but also slowness",
 
-  "magicalequipment.entity_cannot_be_summoned": "Entity cannot be summoned",
-
   "tooltip.magicalequipment.rarrity.common": "Common",
   "tooltip.magicalequipment.rarrity.rare": "Rare",
   "tooltip.magicalequipment.rarrity.epic": "Epic",

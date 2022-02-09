@@ -1,6 +1,9 @@
 package net.bucik689.magicalequipment.entity;
 
 import net.minecraft.world.entity.PathfinderMob;
+
+import java.util.UUID;
+
 import net.bucik689.magicalequipment.entity.Goals.FollowOwnerGoal;
 import net.bucik689.magicalequipment.entity.Goals.TeleportOwnerGoal;
 import net.minecraft.world.entity.EntityType;
@@ -11,7 +14,7 @@ public class BaseSummonEntity extends PathfinderMob {
 
     private final int followOwnerGoalPriority;
     private LivingEntity owner;
-    public Boolean test;
+    private UUID ownerUUID;
 
     public BaseSummonEntity(EntityType<? extends PathfinderMob> type, Level worldIn, int followOwnerGoalPriority) {
         super(type, worldIn);
@@ -23,16 +26,17 @@ public class BaseSummonEntity extends PathfinderMob {
     }
 
     public void setOwner(LivingEntity owner) {
+        this.ownerUUID = owner.getUUID();
         this.owner = owner;
         this.goalSelector.addGoal(0, new TeleportOwnerGoal(this, owner));
         this.goalSelector.addGoal(this.followOwnerGoalPriority, new FollowOwnerGoal(this, owner, this.getNavigation()));
     }
 
-    public void setTest(Boolean test) {
-        this.test = test;
-    }
-
     public LivingEntity getOwner() {
         return this.owner;
+    }
+
+    public UUID getOwnerUUID() {
+        return this.ownerUUID;
     }
 }

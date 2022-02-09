@@ -2,14 +2,13 @@ package net.bucik689.magicalequipment.item.Staff;
 
 import java.util.List;
 
-import net.bucik689.magicalequipment.MagicalEquipment;
 import net.bucik689.magicalequipment.entity.BaseSummonEntity;
 import net.bucik689.magicalequipment.interfaces.ISummoningStaff;
 import net.bucik689.magicalequipment.item.ModCreativeModeTab;
 import net.bucik689.magicalequipment.item.ModItems;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -35,14 +34,19 @@ public class BaseSummoningStaff extends Item implements ISummoningStaff {
         int maxPlayerSummonsCount = 1;
 
         List<BaseSummonEntity> entities = pLevel.getEntitiesOfClass(BaseSummonEntity.class,
-                new AABB(pPlayer.getX() - 300, pPlayer.getY() - 300, pPlayer.getZ() - 300, pPlayer.getX() + 300,
-                        pPlayer.getY() + 300, pPlayer.getZ() + 300));
+                new AABB(pPlayer.getX() - 3000, pPlayer.getY() - 3000, pPlayer.getZ() - 3000,
+                        pPlayer.getX() + 3000,
+                        pPlayer.getY() + 3000, pPlayer.getZ() + 3000),
+                (target) -> {
+                    return target.getOwnerUUID() == pPlayer.getUUID();
+                });
 
         if (entities.size() < maxPlayerSummonsCount) {
             this.summonEntity(pLevel, pPlayer, pUsedHand);
         } else {
-            pPlayer.sendMessage(new TranslatableComponent(MagicalEquipment.MOD_ID + ".entity_cannot_be_summoned"),
-                    pPlayer.getUUID());
+            if (entities.get(0).hurt(DamageSource.GENERIC, entities.get(0).getMaxHealth())) {
+                this.summonEntity(pLevel, pPlayer, pUsedHand);
+            }
         }
 
         return InteractionResultHolder.pass(pPlayer.getItemInHand(pUsedHand));
