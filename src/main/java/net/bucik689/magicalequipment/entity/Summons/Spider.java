@@ -8,6 +8,7 @@ import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
+import net.minecraft.world.entity.ai.goal.LeapAtTargetGoal;
 import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
@@ -23,45 +24,48 @@ import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
 import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 
-public class AdamantiteGolem extends BaseSummonEntity implements IAnimatable, IAnimationTickable {
+public class Spider extends BaseSummonEntity implements IAnimatable, IAnimationTickable {
     private AnimationFactory factory = new AnimationFactory(this);
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
         if (event.isMoving()) {
             event.getController()
-                    .setAnimation(new AnimationBuilder().addAnimation("animation.adamanite_golem.walk", true));
+                    .setAnimation(new AnimationBuilder().addAnimation("animation.spider.walk",
+                            true));
         } else {
             event.getController()
-                    .setAnimation(new AnimationBuilder().addAnimation("animation.adamanite_golem.idle", true));
+                    .setAnimation(new AnimationBuilder().addAnimation("animation.spider.idle",
+                            true));
         }
 
         return PlayState.CONTINUE;
     }
 
-    public AdamantiteGolem(EntityType<? extends PathfinderMob> type, Level worldIn) {
+    public Spider(EntityType<? extends PathfinderMob> type, Level worldIn) {
         super(type, worldIn, 5);
     }
 
     @Override
     public void registerGoals() {
         this.goalSelector.addGoal(1, new FloatGoal(this));
-        this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.0D, true));
+        this.goalSelector.addGoal(3, new LeapAtTargetGoal(this, 0.4F));
+        this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.0D, true));
         this.targetSelector.addGoal(2,
                 new NearestAttackableTargetGoal<>(this, Mob.class, 0, true, false, (target) -> {
                     return target instanceof Enemy;
                 }));
-        this.goalSelector.addGoal(4, new LookAtPlayerGoal(this, Player.class, 6.0F));
+        this.goalSelector.addGoal(5, new LookAtPlayerGoal(this, Player.class, 6.0F));
     }
 
     public static AttributeSupplier.Builder createAttributes() {
-        return LivingEntity.createLivingAttributes().add(Attributes.ATTACK_DAMAGE, 10).add(Attributes.MAX_HEALTH, 200)
+        return LivingEntity.createLivingAttributes().add(Attributes.ATTACK_DAMAGE, 2).add(Attributes.MAX_HEALTH, 35)
                 .add(Attributes.FOLLOW_RANGE, 40).add(Attributes.MOVEMENT_SPEED, 0.3f)
-                .add(Attributes.ATTACK_KNOCKBACK, 1f);
+                .add(Attributes.ATTACK_KNOCKBACK, 0.5f);
     }
 
     @Override
     public void registerControllers(AnimationData data) {
-        AnimationController<AdamantiteGolem> controller = new AnimationController<>(this, "controller", 0,
+        AnimationController<Spider> controller = new AnimationController<>(this, "controller", 0,
                 this::predicate);
         data.addAnimationController(controller);
     }

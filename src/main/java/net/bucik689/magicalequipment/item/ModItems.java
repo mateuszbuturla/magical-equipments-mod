@@ -5,6 +5,7 @@ import net.bucik689.magicalequipment.item.Armor.BaseArmor;
 import net.bucik689.magicalequipment.item.Armor.ModArmorMaterial;
 import net.bucik689.magicalequipment.item.Armor.Adamantite.AdamantiteArmor;
 import net.bucik689.magicalequipment.item.Material.Material;
+import net.bucik689.magicalequipment.item.Staff.Custom.SpiderStaff;
 import net.bucik689.magicalequipment.item.Tool.BaseTools;
 import net.bucik689.magicalequipment.item.Trinket.ItemEffectParam;
 import net.bucik689.magicalequipment.item.Trinket.ItemEffectImmuneParam;
@@ -42,6 +43,8 @@ public class ModItems {
 
         public static final BaseTools ADAMANTITE_TOOLS = new BaseTools("adamantite", ModTiers.ADAMANTITE);
         public static final AdamantiteArmor ADAMANTITE_ARMOR = new AdamantiteArmor();
+
+        public static final SpiderStaff SPIDER_STAFF = new SpiderStaff("spider_staff");
 
         public static final Material OBSIDIAN_CHUNK = new Material("obsidian_chunk");
         public static final TrinketEffect OBSIDIAN_SKULL = new TrinketEffect("obsidian_skull", Rarrity.COMMON,

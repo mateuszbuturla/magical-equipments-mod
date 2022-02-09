@@ -23,8 +23,6 @@ public class TeleportOwnerGoal extends Goal {
             return false;
         }
 
-        MagicalEquipment.LOGGER.info(this.distanceToSqr(this.owner));
-
         if (this.distanceToSqr(this.owner) > 300) {
             this.teleportToOwner();
         }
