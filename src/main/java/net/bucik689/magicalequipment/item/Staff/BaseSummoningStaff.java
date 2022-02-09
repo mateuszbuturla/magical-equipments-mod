@@ -38,7 +38,7 @@ public class BaseSummoningStaff extends Item implements ISummoningStaff {
                         pPlayer.getX() + 3000,
                         pPlayer.getY() + 3000, pPlayer.getZ() + 3000),
                 (target) -> {
-                    return target.getOwnerUUID() == pPlayer.getUUID();
+                    return target.getOwnerUUID() == pPlayer.getUUID() && target.isSummonedByStaff();
                 });
 
         if (entities.size() < maxPlayerSummonsCount) {

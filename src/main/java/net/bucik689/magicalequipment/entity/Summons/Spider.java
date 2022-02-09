@@ -1,7 +1,6 @@
 package net.bucik689.magicalequipment.entity.Summons;
 
 import net.bucik689.magicalequipment.entity.BaseSummonEntity;
-import net.bucik689.magicalequipment.entity.Goals.TeleportOwnerGoal;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
@@ -12,7 +11,6 @@ import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.goal.LeapAtTargetGoal;
 import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.world.entity.ai.goal.MoveTowardsTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.monster.Enemy;
 import net.minecraft.world.entity.player.Player;
@@ -30,18 +28,15 @@ public class Spider extends BaseSummonEntity implements IAnimatable, IAnimationT
     private AnimationFactory factory = new AnimationFactory(this);
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
-        event.getController()
-                .setAnimation(new AnimationBuilder().addAnimation("animation.spider.idle",
-                        true));
-        // if (event.isMoving()) {
-        // event.getController()
-        // .setAnimation(new AnimationBuilder().addAnimation("animation.spider.walk",
-        // true));
-        // } else {
-        // event.getController()
-        // .setAnimation(new AnimationBuilder().addAnimation("animation.spider.idle",
-        // true));
-        // }
+        if (event.isMoving()) {
+            event.getController()
+                    .setAnimation(new AnimationBuilder().addAnimation("animation.spider.walk",
+                            true));
+        } else {
+            event.getController()
+                    .setAnimation(new AnimationBuilder().addAnimation("animation.spider.idle",
+                            true));
+        }
 
         return PlayState.CONTINUE;
     }
@@ -64,7 +59,7 @@ public class Spider extends BaseSummonEntity implements IAnimatable, IAnimationT
 
     public static AttributeSupplier.Builder createAttributes() {
         return LivingEntity.createLivingAttributes().add(Attributes.ATTACK_DAMAGE, 2).add(Attributes.MAX_HEALTH, 35)
-                .add(Attributes.FOLLOW_RANGE, 40).add(Attributes.MOVEMENT_SPEED, 0.4f)
+                .add(Attributes.FOLLOW_RANGE, 40).add(Attributes.MOVEMENT_SPEED, 0.3f)
                 .add(Attributes.ATTACK_KNOCKBACK, 0.5f);
     }
 

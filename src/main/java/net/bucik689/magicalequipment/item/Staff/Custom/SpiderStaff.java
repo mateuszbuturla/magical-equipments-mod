@@ -17,6 +17,7 @@ public class SpiderStaff extends BaseSummoningStaff {
         Spider newSpider = new Spider(ModEntities.SPIDER.get(), pLevel);
         newSpider.setPos(pPlayer.getX(), pPlayer.getY(), pPlayer.getZ());
         newSpider.setOwner(pPlayer);
+        newSpider.setSummonedByStaff(true);
         pLevel.addFreshEntity(newSpider);
     }
 }
