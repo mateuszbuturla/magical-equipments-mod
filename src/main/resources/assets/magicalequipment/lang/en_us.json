@@ -9,6 +9,7 @@
   "item.magicalequipment.mythril_ingot": "Mythril ingot",
   "item.magicalequipment.raw_adamantite": "Raw adamantite",
   "item.magicalequipment.adamantite_ingot": "Adamantite ingot",
+  "item.magicalequipment.spider_fang": "Spider fang",
 
   "block.magicalequipment.mythril_ore": "Mythril ore",
   "block.magicalequipment.adamantite_ore": "Adamantite ore",
@@ -33,6 +34,11 @@
   "item.magicalequipment.adamantite_leggins": "Adamantite leggins",
   "item.magicalequipment.adamantite_chestplate": "Adamantite chestplate",
   "item.magicalequipment.adamantite_helmet": "Adamantite helmet",
+  "item.magicalequipment.spider_fang_boots": "Spider fang boots",
+  "item.magicalequipment.spider_fang_leggins": "Spider fang leggins",
+  "item.magicalequipment.spider_fang_chestplate": "Spider fang chestplate",
+  "item.magicalequipment.spider_fang_helmet": "Spider fang helmet",
+  "item.magicalequipment.spider_staff": "Spider staff",
 
   "item.magicalequipment.obsidian_chunk": "Obsidian chunk",
   "item.magicalequipment.obsidian_skull": "Obsidian skull",
@@ -61,6 +67,7 @@
 
   "magicalequipment.item.description.adamantite_set": "When equipped full set summon Adamantite golem",
   "magicalequipment.item.advanced_description.adamantite_set": "Golem respawn time: 2 min",
+  "magicalequipment.item.description.spider_fang_set": "When equipped full set gains +1 minion capacity",
 
   "magicalequipment.item.description.spider_staff": "Spider staff",
 
@@ -118,5 +125,6 @@
   "tooltip.magicalequipment.slot.necklace": "Necklace",
   "tooltip.magicalequipment.slot.artifact": "Artifact",
   "tooltip.magicalequipment.when_equipped": "When equipped:",
+  "tooltip.magicalequipment.minion_capacity": "+ %1$s minion capacity",
   "tooltip.magicalequipment.shift_to_additional_information": "Press shift for additional information:"
 }

@@ -4,6 +4,7 @@ import net.bucik689.magicalequipment.MagicalEquipment;
 import net.bucik689.magicalequipment.item.Armor.BaseArmor;
 import net.bucik689.magicalequipment.item.Armor.ModArmorMaterial;
 import net.bucik689.magicalequipment.item.Armor.Adamantite.AdamantiteArmor;
+import net.bucik689.magicalequipment.item.Armor.SpiderFang.SpiderFangArmor;
 import net.bucik689.magicalequipment.item.Material.Material;
 import net.bucik689.magicalequipment.item.Staff.Custom.SpiderStaff;
 import net.bucik689.magicalequipment.item.Tool.BaseTools;
@@ -37,12 +38,14 @@ public class ModItems {
         public static final Material MYTHRIL_INGOT = new Material("mythril_ingot");
         public static final Material RAW_ADAMANTITE = new Material("raw_adamantite");
         public static final Material ADAMANTITE_INGOT = new Material("adamantite_ingot");
+        public static final Material SPIDER_FANG = new Material("spider_fang");
 
         public static final BaseTools MYTHRIL_TOOLS = new BaseTools("mythril", ModTiers.MYTHRIL);
         public static final BaseArmor MYTHRIL_ARMOR = new BaseArmor("mythril", ModArmorMaterial.MYTHRIL);
 
         public static final BaseTools ADAMANTITE_TOOLS = new BaseTools("adamantite", ModTiers.ADAMANTITE);
         public static final AdamantiteArmor ADAMANTITE_ARMOR = new AdamantiteArmor();
+        public static final SpiderFangArmor SPIDER_FANG_ARMOR = new SpiderFangArmor();
 
         public static final SpiderStaff SPIDER_STAFF = new SpiderStaff("spider_staff");
 
