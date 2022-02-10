@@ -38,7 +38,10 @@
   "item.magicalequipment.spider_fang_leggins": "Spider fang leggins",
   "item.magicalequipment.spider_fang_chestplate": "Spider fang chestplate",
   "item.magicalequipment.spider_fang_helmet": "Spider fang helmet",
+
   "item.magicalequipment.spider_staff": "Spider staff",
+
+  "item.magicalequipment.leather_whip": "Leather whip",
 
   "item.magicalequipment.obsidian_chunk": "Obsidian chunk",
   "item.magicalequipment.obsidian_skull": "Obsidian skull",
@@ -67,6 +70,7 @@
 
   "magicalequipment.item.description.adamantite_set": "When equipped full set summon Adamantite golem",
   "magicalequipment.item.advanced_description.adamantite_set": "Golem respawn time: 2 min",
+  "magicalequipment.item.description.whip": "Each of your minions will attack the last target you hit",
   "magicalequipment.item.description.spider_fang_set": "When equipped full set gains +1 minion capacity",
 
   "magicalequipment.item.description.spider_staff": "Spider staff",
