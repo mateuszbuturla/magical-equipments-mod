@@ -23,7 +23,7 @@ import net.minecraftforge.common.ForgeTier;
 public class BaseWhip extends SwordItem {
 
     public BaseWhip(String itemName, ForgeTier tier) {
-        super(tier, 0, -2.4F,
+        super(tier, 0, -2F,
                 new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB));
         ModItems.ITEMS.register(itemName, () -> this);
     }
