@@ -1,6 +1,7 @@
 package net.bucik689.magicalequipment.entity.Summons;
 
 import net.bucik689.magicalequipment.entity.BaseSummonEntity;
+import net.bucik689.magicalequipment.entity.Goals.AssistOwner;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
@@ -48,9 +49,10 @@ public class Spider extends BaseSummonEntity implements IAnimatable, IAnimationT
     @Override
     public void registerGoals() {
         this.goalSelector.addGoal(1, new FloatGoal(this));
+        this.goalSelector.addGoal(2, new AssistOwner(this));
         this.goalSelector.addGoal(3, new LeapAtTargetGoal(this, 0.4F));
         this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.0D, true));
-        this.targetSelector.addGoal(2,
+        this.targetSelector.addGoal(5,
                 new NearestAttackableTargetGoal<>(this, Mob.class, 0, true, false, (target) -> {
                     return target instanceof Enemy;
                 }));

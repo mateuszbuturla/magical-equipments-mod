@@ -24,6 +24,7 @@ import net.bucik689.magicalequipment.item.Trinket.Artifact.OffensiveEmblem;
 import net.bucik689.magicalequipment.item.Trinket.Artifact.SmallEmblem;
 import net.bucik689.magicalequipment.item.Trinket.Artifact.VampiricGauntlet;
 import net.bucik689.magicalequipment.item.Trinket.Ring.RingHealth;
+import net.bucik689.magicalequipment.item.Whip.BaseWhip;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -48,6 +49,7 @@ public class ModItems {
         public static final SpiderFangArmor SPIDER_FANG_ARMOR = new SpiderFangArmor();
 
         public static final SpiderStaff SPIDER_STAFF = new SpiderStaff("spider_staff");
+        public static final BaseWhip LEATHER_WHIP = new BaseWhip("leather_whip", ModTiers.LEATHER);
 
         public static final Material OBSIDIAN_CHUNK = new Material("obsidian_chunk");
         public static final TrinketEffect OBSIDIAN_SKULL = new TrinketEffect("obsidian_skull", Rarrity.COMMON,

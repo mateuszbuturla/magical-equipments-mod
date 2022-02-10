@@ -18,6 +18,7 @@ public class BaseSummonEntity extends PathfinderMob {
     private LivingEntity owner;
     private UUID ownerUUID;
     private boolean summonedByStaff;
+    private LivingEntity ownerTarget;
 
     public BaseSummonEntity(EntityType<? extends PathfinderMob> type, Level worldIn, int followOwnerGoalPriority) {
         super(type, worldIn);
@@ -77,10 +78,17 @@ public class BaseSummonEntity extends PathfinderMob {
         return this.ownerUUID;
     }
 
+    public void setOwnerTarget(LivingEntity entity) {
+        MagicalEquipment.LOGGER.info("NEW TARGET");
+        this.ownerTarget = entity;
+    }
+
+    public LivingEntity getOwnerTarget() {
+        return this.ownerTarget;
+    }
+
     public void tick() {
-        MagicalEquipment.LOGGER.info("TICk");
         if (this.owner == null && this.ownerUUID != null) {
-            MagicalEquipment.LOGGER.info("SET OWNER");
             Player findOwner = this.level.getPlayerByUUID(this.ownerUUID);
             if (findOwner != null) {
                 this.setOwner(findOwner);
