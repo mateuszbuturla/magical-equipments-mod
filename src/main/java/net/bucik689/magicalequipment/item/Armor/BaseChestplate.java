@@ -13,6 +13,8 @@ import net.minecraft.world.item.ItemStack;
 
 public class BaseChestplate extends BaseArmorItem {
 
+    private int fullSetBonusMinionCapacity = 0;
+
     public BaseChestplate(String itemName, ModArmorMaterial material, @Nullable String description,
             @Nullable String additionalDescription) {
         super(material, EquipmentSlot.CHEST, new Item.Properties().tab(ModCreativeModeTab.ARMOR_TAB), description,
@@ -38,5 +40,16 @@ public class BaseChestplate extends BaseArmorItem {
 
         return helmet.getMaterial() == material && chestplate.getMaterial() == material &&
                 leggings.getMaterial() == material && boots.getMaterial() == material;
+    }
+
+    public void setFullSetBonuusMinionCapacity(int minionCapacity) {
+        this.fullSetBonusMinionCapacity = minionCapacity;
+    }
+
+    public int getFullSetBonusMinionCapacity(Player player) {
+        if (this.hasFullSuitOfArmorOn(player) && this.hasCorrectArmorOn(this.getMaterial(), player)) {
+            return this.fullSetBonusMinionCapacity;
+        }
+        return 0;
     }
 }
