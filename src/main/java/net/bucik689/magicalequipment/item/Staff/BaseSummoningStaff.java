@@ -2,6 +2,7 @@ package net.bucik689.magicalequipment.item.Staff;
 
 import java.util.List;
 
+import net.bucik689.magicalequipment.MagicalEquipment;
 import net.bucik689.magicalequipment.entity.BaseSummonEntity;
 import net.bucik689.magicalequipment.interfaces.ISummoningStaff;
 import net.bucik689.magicalequipment.item.ModCreativeModeTab;
@@ -19,6 +20,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.AABB;
+import top.theillusivec4.curios.api.CuriosApi;
 import net.minecraft.world.entity.EquipmentSlot;
 
 public class BaseSummoningStaff extends Item implements ISummoningStaff {
@@ -72,6 +74,12 @@ public class BaseSummoningStaff extends Item implements ISummoningStaff {
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
 
         int maxPlayerMinionCapacity = 1;
+
+        if (CuriosApi.getCuriosHelper().findEquippedCurio(ModItems.PYGMY_NECKLACE,
+                pPlayer).isPresent()) {
+            MagicalEquipment.LOGGER.info("YES");
+            maxPlayerMinionCapacity += ModItems.PYGMY_NECKLACE.getBonusMinionCapacity();
+        }
 
         maxPlayerMinionCapacity += this.checkIfPlayerHasItemThatGiveAdditionalMinionCapacity(pPlayer,
                 EquipmentSlot.HEAD);
