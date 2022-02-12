@@ -21,6 +21,7 @@ import net.bucik689.magicalequipment.item.Trinket.Artifact.EmblemOfFierce;
 import net.bucik689.magicalequipment.item.Trinket.Artifact.FrozenTurtleShell;
 import net.bucik689.magicalequipment.item.Trinket.Artifact.ObsidianShield;
 import net.bucik689.magicalequipment.item.Trinket.Artifact.OffensiveEmblem;
+import net.bucik689.magicalequipment.item.Trinket.Artifact.PygmyNecklace;
 import net.bucik689.magicalequipment.item.Trinket.Artifact.SmallEmblem;
 import net.bucik689.magicalequipment.item.Trinket.Artifact.VampiricGauntlet;
 import net.bucik689.magicalequipment.item.Trinket.Ring.RingHealth;
@@ -32,6 +33,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class ModItems {
+
         public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS,
                         MagicalEquipment.MOD_ID);
 
@@ -43,6 +45,8 @@ public class ModItems {
 
         public static final BaseTools MYTHRIL_TOOLS = new BaseTools("mythril", ModTiers.MYTHRIL);
         public static final BaseArmor MYTHRIL_ARMOR = new BaseArmor("mythril", ModArmorMaterial.MYTHRIL);
+        public static final PygmyNecklace PYGMY_NECKLACE = new PygmyNecklace("pygmy_necklace", Rarrity.EPIC,
+                        SlotType.ARTIFACT);
 
         public static final BaseTools ADAMANTITE_TOOLS = new BaseTools("adamantite", ModTiers.ADAMANTITE);
         public static final AdamantiteArmor ADAMANTITE_ARMOR = new AdamantiteArmor();
