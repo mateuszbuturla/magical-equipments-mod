@@ -77,8 +77,11 @@ public class BaseSummoningStaff extends Item implements ISummoningStaff {
 
         if (CuriosApi.getCuriosHelper().findEquippedCurio(ModItems.PYGMY_NECKLACE,
                 pPlayer).isPresent()) {
-            MagicalEquipment.LOGGER.info("YES");
             maxPlayerMinionCapacity += ModItems.PYGMY_NECKLACE.getBonusMinionCapacity();
+        }
+        if (CuriosApi.getCuriosHelper().findEquippedCurio(ModItems.PAPYRUS_SCRAB,
+                pPlayer).isPresent()) {
+            maxPlayerMinionCapacity += ModItems.PAPYRUS_SCRAB.getBonusMinionCapacity();
         }
 
         maxPlayerMinionCapacity += this.checkIfPlayerHasItemThatGiveAdditionalMinionCapacity(pPlayer,
