@@ -8,22 +8,13 @@ import net.bucik689.magicalequipment.item.Armor.SpiderFang.SpiderFangArmor;
 import net.bucik689.magicalequipment.item.Material.Material;
 import net.bucik689.magicalequipment.item.Staff.Custom.SpiderStaff;
 import net.bucik689.magicalequipment.item.Tool.BaseTools;
-import net.bucik689.magicalequipment.item.Trinket.ItemEffectParam;
 import net.bucik689.magicalequipment.item.Trinket.ItemEffectImmuneParam;
+import net.bucik689.magicalequipment.item.Trinket.ItemEffectParam;
 import net.bucik689.magicalequipment.item.Trinket.SlotType;
+import net.bucik689.magicalequipment.item.Trinket.SummonerTrinketBase;
 import net.bucik689.magicalequipment.item.Trinket.TrinketEffect;
 import net.bucik689.magicalequipment.item.Trinket.TrinketEffectImmune;
-import net.bucik689.magicalequipment.item.Trinket.Artifact.AnkhShield;
-import net.bucik689.magicalequipment.item.Trinket.Artifact.CobaltShield;
-import net.bucik689.magicalequipment.item.Trinket.Artifact.DefensiveEmblem;
-import net.bucik689.magicalequipment.item.Trinket.Artifact.EmblemOfAbsorption;
-import net.bucik689.magicalequipment.item.Trinket.Artifact.EmblemOfFierce;
-import net.bucik689.magicalequipment.item.Trinket.Artifact.FrozenTurtleShell;
-import net.bucik689.magicalequipment.item.Trinket.Artifact.ObsidianShield;
-import net.bucik689.magicalequipment.item.Trinket.Artifact.OffensiveEmblem;
-import net.bucik689.magicalequipment.item.Trinket.Artifact.PygmyNecklace;
-import net.bucik689.magicalequipment.item.Trinket.Artifact.SmallEmblem;
-import net.bucik689.magicalequipment.item.Trinket.Artifact.VampiricGauntlet;
+import net.bucik689.magicalequipment.item.Trinket.Artifact.*;
 import net.bucik689.magicalequipment.item.Trinket.Ring.RingHealth;
 import net.bucik689.magicalequipment.item.Whip.BaseWhip;
 import net.minecraft.world.effect.MobEffects;
@@ -33,6 +24,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class ModItems {
+
+        public static ModSummonerItems ITEMS_FOR_SUMMONER_CLASS = new ModSummonerItems();
 
         public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS,
                         MagicalEquipment.MOD_ID);
@@ -47,6 +40,13 @@ public class ModItems {
         public static final BaseArmor MYTHRIL_ARMOR = new BaseArmor("mythril", ModArmorMaterial.MYTHRIL);
         public static final PygmyNecklace PYGMY_NECKLACE = new PygmyNecklace("pygmy_necklace", Rarrity.EPIC,
                         SlotType.ARTIFACT);
+        public static final PapyrusScarab PAPYRUS_SCRAB = new PapyrusScarab("papyrus_scrab", Rarrity.EPIC,
+                        SlotType.ARTIFACT);
+        public static final HerculesBeetle HERCULES_BEETLE = new HerculesBeetle("hercules_beetle", Rarrity.EPIC,
+                        SlotType.ARTIFACT);
+        public static final SummonerTrinketBase NECROMANTIC_SCROLL = new SummonerTrinketBase("necromantic_scroll",
+                        Rarrity.EPIC,
+                        SlotType.ARTIFACT, 1, 15);
 
         public static final BaseTools ADAMANTITE_TOOLS = new BaseTools("adamantite", ModTiers.ADAMANTITE);
         public static final AdamantiteArmor ADAMANTITE_ARMOR = new AdamantiteArmor();

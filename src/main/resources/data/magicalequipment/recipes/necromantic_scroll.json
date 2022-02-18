@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["#", "J"],
+  "key": {
+    "#": {
+      "item": "magicalequipment:papyrus_scrab"
+    },
+    "J": {
+      "item": "magicalequipment:hercules_beetle"
+    }
+  },
+  "result": { "item": "magicalequipment:necromantic_scroll" }
+}

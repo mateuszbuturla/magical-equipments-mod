@@ -1,18 +1,26 @@
 package net.bucik689.magicalequipment.entity;
 
 import net.minecraft.world.entity.PathfinderMob;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
 import java.util.UUID;
 
 import net.bucik689.magicalequipment.MagicalEquipment;
 import net.bucik689.magicalequipment.entity.Goals.FollowOwnerGoal;
 import net.bucik689.magicalequipment.entity.Goals.TeleportOwnerGoal;
+import net.bucik689.magicalequipment.item.ModItems;
+import net.bucik689.magicalequipment.item.Trinket.SummonerTrinketBase;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
+import top.theillusivec4.curios.api.CuriosApi;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation;
 
 public class BaseSummonEntity extends PathfinderMob {
+
+    private static final UUID ATTACK_DAMAGE_UUID = UUID.fromString("27757886-d247-1111-b035-a8a2f427a3e9");
 
     private final int followOwnerGoalPriority;
     private LivingEntity owner;
@@ -55,6 +63,39 @@ public class BaseSummonEntity extends PathfinderMob {
         super.readAdditionalSaveData(pCompound);
     }
 
+    private double getPlayerMinionDamageBonus() {
+
+        double bonusMinionDamage = 0;
+
+        SummonerTrinketBase items[] = ModItems.ITEMS_FOR_SUMMONER_CLASS.ITEMS;
+
+        for (int i = 0; i < items.length; i++) {
+            if (CuriosApi.getCuriosHelper().findEquippedCurio(items[i],
+                    this.owner).isPresent()) {
+                bonusMinionDamage += items[i].getBonusMinionDamage();
+            }
+        }
+
+        return bonusMinionDamage / 100 * this.getAttributeValue(Attributes.ATTACK_DAMAGE);
+    }
+
+    public void setAttributeModifiers() {
+
+        if (this.getAttribute(Attributes.ATTACK_DAMAGE).getModifier(ATTACK_DAMAGE_UUID) == null
+                || this.getPlayerMinionDamageBonus() != this.getAttribute(Attributes.ATTACK_DAMAGE)
+                        .getModifier(ATTACK_DAMAGE_UUID).getAmount()) {
+            if (this.getAttribute(Attributes.ATTACK_DAMAGE).getModifier(ATTACK_DAMAGE_UUID) != null) {
+                this.getAttribute(Attributes.ATTACK_DAMAGE).removeModifier(ATTACK_DAMAGE_UUID);
+            }
+            this.getAttribute(Attributes.ATTACK_DAMAGE)
+                    .addPermanentModifier(
+                            new AttributeModifier(ATTACK_DAMAGE_UUID, "Attack Damage",
+                                    this.getPlayerMinionDamageBonus(),
+                                    Operation.ADDITION));
+        }
+        MagicalEquipment.LOGGER.info(this.getAttribute(Attributes.ATTACK_DAMAGE).getValue());
+    }
+
     public void setSummonedByStaff(boolean value) {
         this.summonedByStaff = value;
     }
@@ -88,6 +129,10 @@ public class BaseSummonEntity extends PathfinderMob {
     }
 
     public void tick() {
+        if (this.owner != null) {
+            this.setAttributeModifiers();
+        }
+
         if (this.owner == null && this.ownerUUID != null) {
             Player findOwner = this.level.getPlayerByUUID(this.ownerUUID);
             if (findOwner != null) {

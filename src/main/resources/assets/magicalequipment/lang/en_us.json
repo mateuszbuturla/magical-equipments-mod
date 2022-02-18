@@ -68,6 +68,9 @@
   "item.magicalequipment.emblem_of_fierce": "Emblem of fierce",
   "item.magicalequipment.frozen_turtle_shell": "Frozen turtle shell",
   "item.magicalequipment.pygmy_necklace": "Pygmy necklace",
+  "item.magicalequipment.papyrus_scrab": "Papyrus scrab",
+  "item.magicalequipment.hercules_beetle": "Hercules Beetle",
+  "item.magicalequipment.necromantic_scroll": "Necromantic scroll",
 
   "magicalequipment.item.description.adamantite_set": "When equipped full set summon Adamantite golem",
   "magicalequipment.item.advanced_description.adamantite_set": "Golem respawn time: 2 min",
@@ -76,6 +79,9 @@
 
   "magicalequipment.item.description.spider_staff": "Spider staff",
   "magicalequipment.item.description.pygmy_necklace": "Increases your max number of minions by 1",
+  "magicalequipment.item.description.papyrus_scrab": "Increases your max number of minions by 1",
+  "magicalequipment.item.description.hercules_beetle": "Increases your minions damage by 15%",
+  "magicalequipment.item.description.necromantic_scroll": "Increases your max number of minions by 1 and minions damage by 15%",
 
   "magicalequipment.item.description.obsidian_skull": "Gains fire resistance",
   "magicalequipment.item.description.fast_clock": "Gains immunity to slowness",
