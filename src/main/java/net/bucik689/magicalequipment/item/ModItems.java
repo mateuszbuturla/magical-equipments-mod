@@ -11,6 +11,7 @@ import net.bucik689.magicalequipment.item.Tool.BaseTools;
 import net.bucik689.magicalequipment.item.Trinket.ItemEffectImmuneParam;
 import net.bucik689.magicalequipment.item.Trinket.ItemEffectParam;
 import net.bucik689.magicalequipment.item.Trinket.SlotType;
+import net.bucik689.magicalequipment.item.Trinket.SummonerTrinketBase;
 import net.bucik689.magicalequipment.item.Trinket.TrinketEffect;
 import net.bucik689.magicalequipment.item.Trinket.TrinketEffectImmune;
 import net.bucik689.magicalequipment.item.Trinket.Artifact.*;
@@ -43,6 +44,9 @@ public class ModItems {
                         SlotType.ARTIFACT);
         public static final HerculesBeetle HERCULES_BEETLE = new HerculesBeetle("hercules_beetle", Rarrity.EPIC,
                         SlotType.ARTIFACT);
+        public static final SummonerTrinketBase NECROMANTIC_SCROLL = new SummonerTrinketBase("necromantic_scroll",
+                        Rarrity.EPIC,
+                        SlotType.ARTIFACT, 1, 15);
 
         public static final BaseTools ADAMANTITE_TOOLS = new BaseTools("adamantite", ModTiers.ADAMANTITE);
         public static final AdamantiteArmor ADAMANTITE_ARMOR = new AdamantiteArmor();
