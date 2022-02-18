@@ -2,7 +2,6 @@ package net.bucik689.magicalequipment.item.Staff;
 
 import java.util.List;
 
-import net.bucik689.magicalequipment.MagicalEquipment;
 import net.bucik689.magicalequipment.entity.BaseSummonEntity;
 import net.bucik689.magicalequipment.interfaces.ISummoningStaff;
 import net.bucik689.magicalequipment.item.ModCreativeModeTab;
@@ -10,6 +9,7 @@ import net.bucik689.magicalequipment.item.ModItems;
 import net.bucik689.magicalequipment.item.Armor.BaseArmorItem;
 import net.bucik689.magicalequipment.item.Armor.BaseChestplate;
 import net.bucik689.magicalequipment.item.Armor.ModArmorMaterial;
+import net.bucik689.magicalequipment.item.Trinket.SummonerTrinketBase;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.damagesource.DamageSource;
@@ -31,6 +31,22 @@ public class BaseSummoningStaff extends Item implements ISummoningStaff {
         super(new Item.Properties().stacksTo(1).tab(ModCreativeModeTab.TOOLS_TAB));
         this.itemName = itemName;
         ModItems.ITEMS.register(itemName, () -> this);
+    }
+
+    public int getPlayerMinionDamageBonus(Player pPlayer) {
+
+        int bonusMinionDamage = 0;
+
+        SummonerTrinketBase items[] = ModItems.ITEMS_FOR_SUMMONER_CLASS.ITEMS;
+
+        for (int i = 0; i < items.length; i++) {
+            if (CuriosApi.getCuriosHelper().findEquippedCurio(items[i],
+                    pPlayer).isPresent()) {
+                bonusMinionDamage += items[i].getBonusMinionDamage();
+            }
+        }
+
+        return bonusMinionDamage;
     }
 
     public void summonEntity(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
@@ -75,13 +91,13 @@ public class BaseSummoningStaff extends Item implements ISummoningStaff {
 
         int maxPlayerMinionCapacity = 1;
 
-        if (CuriosApi.getCuriosHelper().findEquippedCurio(ModItems.PYGMY_NECKLACE,
-                pPlayer).isPresent()) {
-            maxPlayerMinionCapacity += ModItems.PYGMY_NECKLACE.getBonusMinionCapacity();
-        }
-        if (CuriosApi.getCuriosHelper().findEquippedCurio(ModItems.PAPYRUS_SCRAB,
-                pPlayer).isPresent()) {
-            maxPlayerMinionCapacity += ModItems.PAPYRUS_SCRAB.getBonusMinionCapacity();
+        SummonerTrinketBase items[] = ModItems.ITEMS_FOR_SUMMONER_CLASS.ITEMS;
+
+        for (int i = 0; i < items.length; i++) {
+            if (CuriosApi.getCuriosHelper().findEquippedCurio(items[i],
+                    pPlayer).isPresent()) {
+                maxPlayerMinionCapacity += items[i].getBonusMinionCapacity();
+            }
         }
 
         maxPlayerMinionCapacity += this.checkIfPlayerHasItemThatGiveAdditionalMinionCapacity(pPlayer,
