@@ -133,11 +133,13 @@ public class ModItems {
                         "advanced_ring_of_strength",
                         Rarrity.EPIC, SlotType.RING,
                         new ItemEffectParam[] { new ItemEffectParam(MobEffects.DAMAGE_BOOST, 1) });
+
         public static final TrinketEffect RING_OF_TANK = new TrinketEffect(
                         "ring_of_tank",
                         Rarrity.EPIC, SlotType.RING,
                         new ItemEffectParam[] { new ItemEffectParam(MobEffects.DAMAGE_RESISTANCE, 2),
                                         new ItemEffectParam(MobEffects.MOVEMENT_SLOWDOWN, 2) });
+
         public static final FrozenTurtleShell FROZEN_TURTLE_SHELL = new FrozenTurtleShell(
                         "frozen_turtle_shell",
                         Rarrity.UNIQUE, SlotType.ARTIFACT);
